@@ -22,6 +22,13 @@
 
 .logo img {
     width: 100px;
+    filter: invert(1);
+    cursor: pointer;
+}
+.logo img:hover {
+    width: 100px;
+    filter: invert(0.7);
+    cursor: pointer;
 }
 
 .options {
@@ -30,13 +37,12 @@
     display: flex;
     align-items: center;
     justify-content: right;
-    border-right: 2px solid rgba(0, 0, 0, 0.258);
+    border-right: 2px solid rgba(255, 255, 255, 0.258);
 }
 
 .nav-links {
     display: flex;
     list-style: none;
-
 }
 
 .nav-links li {
@@ -46,7 +52,7 @@
 
 .nav-links li a {
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
     font-size: 18px;
     font-weight: bold;
     padding: 10px;
@@ -65,6 +71,7 @@
     max-height: 0;
     /* Collapsed by default */
     transform: translateY(10px);
+    
     /* Slightly down */
     transition: max-height 0.4s ease, opacity 0.4s ease, transform 0.4s ease;
     /* Smooth animation */
@@ -78,6 +85,7 @@
 .dropdown-menu li a {
     color: #fff;
     font-size: 16px;
+    text-align: left;
 }
 
 /* Social Media Icons Styling */
@@ -95,11 +103,11 @@
 .social-icons a img {
     height: 1.5rem;
     transition: 0.2s linear;
-    filter: invert(1);
+    filter: invert(0);
 }
 
 .social-icons a img:hover {
-    filter: invert(0)
+    filter: invert(1)
 }
 
 .dropdown:hover .dropdown-menu {
@@ -152,6 +160,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
     display: flex;
     align-items: center;
     justify-content: right;
@@ -159,7 +169,6 @@
 .darken_gradient {
     position: absolute;
     background: rgba(0, 0, 0, 0.459);
-    /* background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.696) 100%); */
     top: 0;
     left: 0;
     height: 100vh;
@@ -170,6 +179,7 @@
     position: relative ;
     left: 55rem;
     animation: content_drift 1s ease-in-out forwards;
+    z-index: 3 ;
 }
 @keyframes content_drift{
     0%{
@@ -257,13 +267,14 @@
 
 .set_cookies_option {
     position: relative;
-    top: -10px;
+    top: 250px;
     left: 10px;
     height: 12rem;
     width: 25rem;
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
     animation: cookies_animation 1s ease-in-out forwards;
+    animation-delay: 1s;
 }
 
 @keyframes cookies_animation {
@@ -343,4 +354,75 @@
     color: white;
     background-color: #7a28df;
     border: 1px solid #7a28df;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.login_signup_option{
+    position: absolute;
+    top: -100vh;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+    z-index: 1000;
+    animation-name: login_appear;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: 3s;
+}
+@keyframes login_appear{
+    0%{
+        top: -100vh;
+    }
+    100%{
+        top: 0vh ;
+    }
+}
+@keyframes login_appear_reverse{
+    0%{
+        top: 0vh;
+    }
+    100%{
+        top: -100vh ;
+    }
 }
