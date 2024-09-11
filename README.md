@@ -63,9 +63,9 @@ This project helps students and individuals looking for accommodations in new ci
 ├── ml-model/
 │   └── property-recommendation-knn/
 └── README.md
+```
 
 📜 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-<p align="center"> Made with ❤️ by **Tanir Sahoo**, **Sankha Sengupta**, **Aman Kumar Shah**, and **Md. Asad Reyaz** </p>
-```
+<p align="center"> Made by **Tanir Sahoo**, **Sankha Sengupta**, **Aman Kumar Shah**, and **Md. Asad Reyaz** </p>
