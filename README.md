@@ -66,7 +66,7 @@ This project helps students and individuals looking for accommodations in new ci
 ```
 
 📜 License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the Apache 2.0-License - see the LICENSE file for details.
 ---
 
 <p align="center">
