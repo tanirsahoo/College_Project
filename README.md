@@ -1,5 +1,5 @@
 <!-- Project Banner -->
-![Project Banner]([https://via.placeholder.com/1200x400?text=Paying+Guest+Property+Listing+Platform](https://github.com/tanirsahoo/College_Project/blob/main/Front_end_files/Media_Files/landing_page.JPG))
+![Project Banner](https://via.placeholder.com/1200x400?text=Paying+Guest+Property+Listing+Platform)
 
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Under%20Development-yellow?style=for-the-badge" />
