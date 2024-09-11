@@ -49,7 +49,7 @@ This project helps students and individuals looking for accommodations in new ci
 
 <p align="center">
   <img src="https://img.shields.io/badge/Version-1.0-green?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/License-Apache 2.0-blue?style=for-the-badge" />
 </p>
 
 ## 📂 Repository Structure
