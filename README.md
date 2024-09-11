@@ -67,7 +67,16 @@ This project helps students and individuals looking for accommodations in new ci
 
 📜 License
 This project is licensed under the MIT License - see the LICENSE file for details.
+---
 
-<p align="center"> <img src="https://img.shields.io/badge/Made%20by%20✨%20Team%20Awesome%20✨-purple?style=for-the-badge" /> </p> <div align="center">
-<img src="https://via.placeholder.com/100.png?text=TS" width="100px;"/><br><sub><b>Tanir Sahoo</b></sub>	<img src="https://via.placeholder.com/100.png?text=SG" width="100px;"/><br><sub><b>Sankha Sengupta</b></sub>	<img src="https://via.placeholder.com/100.png?text=AK" width="100px;"/><br><sub><b>Aman Kumar Shah</b></sub>	<img src="https://via.placeholder.com/100.png?text=AR" width="100px;"/><br><sub><b>Md. Asad Reyaz</b></sub>
+<p align="center">
+    <img src="https://img.shields.io/badge/Made%20by%20✨%20Team%20Awesome%20✨-purple?style=for-the-badge" />
+</p>
+
+<div align="center">
+
+| [<img src="https://via.placeholder.com/100.png?text=TS" width="100px;"/><br><sub><b>Tanir Sahoo</b></sub>](https://github.com/TanirSahoo) | [<img src="https://via.placeholder.com/100.png?text=SG" width="100px;"/><br><sub><b>Sankha Sengupta</b></sub>](https://github.com/SankhaSengupta) | [<img src="https://via.placeholder.com/100.png?text=AK" width="100px;"/><br><sub><b>Aman Kumar Shah</b></sub>](https://github.com/AmanKumarShah) | [<img src="https://via.placeholder.com/100.png?text=AR" width="100px;"/><br><sub><b>Md. Asad Reyaz</b></sub>](https://github.com/AsadReyaz) |
+|:-----------------------------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------:|
+
 </div>
+
