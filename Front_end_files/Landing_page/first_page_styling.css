@@ -13,7 +13,7 @@
     background-color: transparent;
     /* backdrop-filter: blur(10px); */
     /* Frosted glass effect */
-    position: fixed;
+    position: absolute;
     width: 100%;
     top: 0;
     z-index: 100;
@@ -159,8 +159,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
-    width: 100vw;
+    height: 110vh;
+    width: 100%;
     overflow-x: hidden;
     display: flex;
     align-items: center;
@@ -169,9 +169,10 @@
 .darken_gradient {
     position: absolute;
     background: rgba(0, 0, 0, 0.459);
+    /* background: #277c9e82; */
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 110vh;
     width: 100%;
     z-index: 1;
 }
@@ -258,11 +259,11 @@
 
 
 .cookies_policy {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     background-color: transparent;
-    z-index: 2;
+    z-index: 5;
 }
 
 .set_cookies_option {
@@ -275,6 +276,7 @@
     background-color: rgb(255, 255, 255);
     animation: cookies_animation 1s ease-in-out forwards;
     animation-delay: 1s;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.763);
 }
 
 @keyframes cookies_animation {
@@ -333,8 +335,8 @@
 
 .reject_all_option:hover {
     color: white;
-    background-color: #7a28df;
-    border: 1px solid #7a28df;
+    background-color: #25305A;
+    border: 1px solid #25305A;
 }
 
 .accept_all_option {
@@ -352,8 +354,8 @@
 
 .accept_all_option:hover {
     color: #ffffff;
-    background-color: #7a28df;
-    border: 1px solid #7a28df;
+    background-color: #25305A;
+    border: 1px solid #25305A;
 }
 
 
@@ -509,4 +511,261 @@
     margin: 0rem 0rem 0rem 2rem;
     cursor: pointer;
     font-size: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.booking_details_pamplet{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.booking_details_pamplet_div{
+    position: relative;
+    height: 10rem;
+    width: 40rem;
+    border-radius: 0px;
+    top: -3rem;
+    background-color: #25305a;
+    z-index: 2;
+}
+.booking_details_pamplet_div_part_two{
+    position: relative;
+    top: -3rem;
+    z-index: 3;
+    width: 10rem;
+    background-color: #3F9CC1;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s linear;
+    cursor: pointer;
+}
+.booking_details_pamplet_div_part_two_text_inside{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+.booking_details_pamplet_div_part_two:hover{
+    background-color: #277c9e;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.landing_page_first_desc_section{
+    width: 100%;
+    height: auto;
+}
+.landing_page_first_desc_section_insider_1{
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 60vh;
+}
+.landing_page_first_desc_section_insider_1_1{
+    display: flex;
+    align-items:baseline;
+    justify-content: center;
+    width: 50%;
+}
+.landing_page_first_desc_section_insider_1_1_img1 img{
+    width: 20rem;
+    height: auto;
+}
+.landing_page_first_desc_section_insider_1_1_img2 img{
+    width: 20rem;
+    height: auto;
+}
+.landing_page_first_desc_section_insider_1_1_img2{
+    position: relative;
+    left: -8rem;
+    bottom: -5rem;
+}
+
+
+
+
+.landing_page_first_desc_section_insider_1_2_part_1{
+    background-color: #C1B086;
+    height: 5px;
+    width: 4.5rem;
+    margin: 0rem 0rem 1.5rem 0rem;
+    /* border-radius: 20px; */
+}
+.landing_page_first_desc_section_insider_1_2_part_2_header{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.landing_page_first_desc_section_insider_1_2_part_3_header{
+    margin: 1.5rem 0rem 0rem 0rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+}
+.landing_page_first_desc_section_insider_1_2_part_4{
+    width: 32rem;
+}
+.landing_page_first_desc_section_insider_1_2_part_4_header_one{
+    margin: 2rem 0rem 0rem 2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1rem;
+    color: #696767;
+}
+.landing_page_first_desc_section_insider_1_2_part_4_header_two{
+    margin: 1rem 0rem 0rem 2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1rem;
+    color: #696767;
+}
+.landing_page_first_desc_section_insider_1_2_part_5_submit_button{
+    background-color: #C1B086;
+    width: 10rem;
+    margin: 2rem 0rem 0rem 2rem;
+    text-align: center;
+    padding: 1.1rem 1.2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+}
+.landing_page_first_desc_section_insider_1_2_part_5_submit_button:hover{
+    background-color: #25305A;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.landing_page_second_desc_dection_inside_1{
+    position: relative;
+    background-image: url('/Media_Files/4.jpg');
+    height: 65vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    margin: 5rem 0rem 5rem 0rem;
+}
+.landing_page_second_desc_dection_inside_2{
+    position: relative;
+    left: 50rem;
+    width: 35rem;
+    height: 80vh;
+    background-color: transparent ;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.landing_page_second_desc_dection_inside_2_image{
+    position: absolute;
+    left: 50rem;
+    width: 35rem;
+    height: 80vh;
+    background-color: #3F9CC1;
+    z-index: 2;
+}
+.landing_page_second_desc_dection_inside_2_image img{
+    filter: invert(1);
+    opacity: 0.1;
+}
+.landing_page_second_desc_dection_inside_2_1{
+    margin: 0rem 5rem;
+}
+.landing_page_second_desc_dection_inside_2_1_para1{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+}
+.landing_page_second_desc_dection_inside_2_1_para_2{
+    margin: 2rem 0rem 0rem 0rem;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.1rem;
+    word-spacing: 0.2rem;
 }
