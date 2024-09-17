@@ -53,10 +53,13 @@
 .nav-links li a {
     text-decoration: none;
     color: #ffffff;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: bold;
     padding: 10px;
     transition: color 0.3s;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .dropdown-menu {
@@ -768,4 +771,34 @@
     font-style: normal;
     font-size: 1.1rem;
     word-spacing: 0.2rem;
+}
+.landing_page_second_desc_dection_inside_2_amenities img{
+    width: 1.5rem;
+    height: auto;
+    filter: invert(1);
+}
+.landing_page_second_desc_dection_inside_2_amenities p{
+    color: white;
+    margin: 0rem 0rem 0rem 1rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: left;
+}
+.landing_page_second_desc_dection_inside_2_amenities_first{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.landing_page_second_desc_dection_inside_2_amenities_part_1{
+    margin: 1rem 0rem;
+}
+.landing_page_second_desc_dection_inside_2_amenities_part_2{
+    margin: 1rem 2rem;
+}
+.landing_page_second_desc_dection_inside_2_amenities{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 1rem 0rem 0rem 0rem;
 }
