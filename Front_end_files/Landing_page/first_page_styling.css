@@ -287,7 +287,7 @@
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
     animation: cookies_animation 1s ease-in-out forwards;
-    animation-delay: 1s;
+    animation-delay: 3s;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.763);
 }
 
@@ -422,7 +422,7 @@
     animation-name: login_appear;
     animation-fill-mode: forwards;
     animation-duration: 1s;
-    animation-delay: 3s;
+    animation-delay: 5s;
 }
 
 @keyframes login_appear {
