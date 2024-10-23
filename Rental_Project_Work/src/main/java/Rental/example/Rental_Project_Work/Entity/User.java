@@ -29,5 +29,5 @@ public class User {
     private String Address ;
     private int referral_id ;
     @NotBlank(message = "Please add your contact number")
-    private int number ;
+    private int contact_number ;
 }

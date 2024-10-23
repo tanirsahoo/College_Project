@@ -551,7 +551,7 @@
 
 
 
-.booking_details_pamplet {
+/* .booking_details_pamplet {
     width: 100%;
     height: auto;
     display: flex;
@@ -593,7 +593,122 @@
 
 .booking_details_pamplet_div_part_two:hover {
     background-color: #277c9e;
+} */
+
+/* Form styling */
+.booking_form {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* padding: 1rem; */
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.1rem;
 }
+.booking_form div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.booking_form label {
+    margin-bottom: 0.5rem;
+    color: black;
+}
+
+.booking_form select,
+.booking_form input {
+    width: 100%;
+    padding: 0.5rem;
+    /* margin-bottom: 1rem; */
+    background-color: #ffffff;
+    color: black;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    outline: none;
+    margin: 0rem 1rem;
+    font-size: 0.8rem;
+}
+
+.booking_form select:focus,
+.booking_form input:focus {
+    border-color: #C1B086;
+}
+
+.booking_submit_btn {
+    background-color: #C1B086;
+    color: #25305a;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 1.1rem;
+    border-radius: 4px;
+}
+
+.booking_submit_btn:hover {
+    background-color: #a4956d;
+}
+
+/* Adjusting pamplet height to fit form */
+.booking_details_pamplet_div {
+    width: 70%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 4rem;
+    margin: 2rem 0rem;
+    background-color: #3f496a;
+}
+.booking_details_pamplet{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style for multiple select (landmarks) */
+.custom-multi-select {
+    position: relative;
+}
+
+.custom-multi-select select[multiple] {
+    display: none;
+}
+
+.custom-multi-select:before {
+    content: 'Select Landmarks...';
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.custom-multi-select select[multiple]:focus + .custom-multi-select:before {
+    border-color: #C1B086;
+}
+
+.custom-multi-select.open select[multiple] {
+    display: block;
+    position: absolute;
+    width: 100%;
+    max-height: 6rem;
+    overflow-y: auto;
+    background-color: #3f496a;
+    z-index: 10;
+}
+.location_of_the_searching_pg input{
+    max-width: 20rem;
+}
+
 
 
 

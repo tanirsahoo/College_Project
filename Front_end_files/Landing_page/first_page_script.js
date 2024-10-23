@@ -94,3 +94,29 @@ function handleLoginFormSubmit(event) {
 
 document.getElementById('signup-form').addEventListener('submit', handleSignupFormSubmit);
 document.getElementById('login-form').addEventListener('submit', handleLoginFormSubmit);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.querySelector('.custom-multi-select').addEventListener('click', function() {
+    this.classList.toggle('open');
+});
+
+document.querySelectorAll('.custom-multi-select select option').forEach(option => {
+    option.addEventListener('click', function(e) {
+        console.log("Clicked");
+        e.stopPropagation();
+    });
+});
