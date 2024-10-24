@@ -620,17 +620,20 @@
 .booking_form select,
 .booking_form input {
     width: 100%;
-    padding: 0.5rem;
-    /* margin-bottom: 1rem; */
-    background-color: #ffffff;
-    color: black;
+    padding: 0.7rem 0.5rem;
+    background-color: #252F5A;
+    color: rgb(255, 255, 255);
     border: 1px solid #ffffff;
     border-radius: 4px;
     font-family: "Roboto", sans-serif;
     font-size: 1rem;
     outline: none;
-    margin: 0rem 1rem;
-    font-size: 0.8rem;
+    margin: 0rem 0.2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-left: 0.4rem;
+    outline: #656666;
 }
 
 .booking_form select:focus,
@@ -639,14 +642,17 @@
 }
 
 .booking_submit_btn {
-    background-color: #C1B086;
-    color: #25305a;
+    height: 8rem;
+    width: 8rem;
+    background-color: #0E4673;
+    color: #ffffff;
     border: none;
-    padding: 0.8rem 1.5rem;
+    padding: 0.8rem 0rem;
     cursor: pointer;
     transition: 0.3s ease;
     font-size: 1.1rem;
-    border-radius: 4px;
+    margin-left: 0.4rem;
+    letter-spacing: 0.2rem;
 }
 
 .booking_submit_btn:hover {
@@ -655,14 +661,16 @@
 
 /* Adjusting pamplet height to fit form */
 .booking_details_pamplet_div {
-    width: 70%;
-    height: 5rem;
+    width: 50%;
+    height: 6rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 4rem 4rem;
+    padding: 4rem 0rem;
     margin: 2rem 0rem;
-    background-color: #3f496a;
+    background-color: #252F5A;
+    margin-top: -1rem;
+    z-index: 2;
 }
 .booking_details_pamplet{
     display: flex;
@@ -707,6 +715,7 @@
 }
 .location_of_the_searching_pg input{
     max-width: 20rem;
+    color: white;
 }
 
 
@@ -1100,3 +1109,243 @@
     margin-top: 0.2rem;
     margin-left: 1rem;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.landing_page_second_desc_dection_inside_1_feedback{
+    position: relative;
+    background-image: url(/Media_Files/3.jpg);
+    height: 65vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    margin: 5rem 0rem 5rem 0rem;
+}
+.landing_page_second_desc_dection_inside_1_feedback .landing_page_second_desc_dection_inside_2{
+    position: relative;
+    left: 10rem;
+    width: 35rem;
+    height: 80vh;
+    background-color: transparent;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.landing_page_second_desc_dection_inside_1_feedback .landing_page_second_desc_dection_inside_2_image{
+    position: absolute;
+    left: 10rem;
+    width: 35rem;
+    height: 80vh;
+    background-color: #3F9CC1;
+    z-index: 2;
+}
+.dash_inside{
+    width: 4rem;
+    height: 0.2rem;
+    background-color: white;
+}
+.message_below_dash{
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    margin: 1rem 0rem;
+}
+.rating_message_header{
+    font-size: 1.3rem;
+    font-family: "Playwrite DE Grund", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+.rating_review_message{
+    font-size: 1rem;
+    margin: 1rem 0rem 0rem 2rem;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.5rem;
+}
+.rater_image_profile{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 1rem 0rem 0rem 0rem;
+}
+.rater_image_profile_inside{
+    width: 3rem;
+    height: 3rem;
+    overflow: hidden;
+    display:flex;
+    align-items: center;
+    /* justify-content: center; */
+    border-radius: 50%;
+}
+.rater_image_profile_inside img{
+    height: 3rem;
+    width: auto;
+    left: -0.5rem;
+    margin: 0rem 0rem 0rem -0.5rem ;
+}
+.rater_image_profile_inside_2{
+    height: 100%;
+    align-items: center;
+    margin: 0rem 0rem 0rem 0.5rem;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 0.8rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+.description_page_landing_page_inside_content{
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e8e8e8;
+  }
+  .description_page_landing_page_inside_content_inside {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #ffffff;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+  }
+  .carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+  }
+  .carousel-images {
+    display: flex;
+    transition: transform 0.8s ease-in-out;
+  }
+  .carousel-images img {
+    width: 25%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 5px;
+  }
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    border: none;
+    font-size: 2rem;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+  }
+  .arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .arrow.left {
+    left: 20px;
+  }
+  .arrow.right {
+    right: 20px;
+  }
+  .view-more-container {
+    position: relative;
+  }
+  .view-more-container::after {
+    content: "View More";
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  .view-more-container:hover::after {
+    background-color: #c1b086;
+  }
+  @media (max-width: 768px) {
+    .carousel-images img {
+      width: 50%;
+      height: 200px;
+    }
+  }
+  @media (max-width: 480px) {
+    .carousel-images img {
+      width: 100%;
+      height: 150px;
+    }
+  }
