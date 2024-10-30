@@ -34,5 +34,4 @@ public class UserEntityController {
     public UserEntity updateUser(@PathVariable("id") int user_id,@Valid @RequestBody UserEntity useren){
         return userService.updateUser(user_id,useren);
     }
-
 }

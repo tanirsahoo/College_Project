@@ -1,3 +1,5 @@
+// import { signup_endpoint_post } from "../Common_files/endpoint.js";
+
 function toggleForm() {
     const loginForm = document.getElementById('login-form');
     const signupForm = document.getElementById('signup-form');
@@ -24,13 +26,19 @@ document.getElementById('login_signup_option_open').addEventListener('click', ()
 
 
 
+const crypto = require('crypto');
 
+function hashPassword(password) {
+  const hash = crypto.createHash('sha256');
+  hash.update(password);
+  return hash.digest('hex');
+}
 
 function handleSignupFormSubmit(event) {
     event.preventDefault();
     const username = document.getElementById('signup-username').value;
-    const password = document.getElementById('signup-password').value;
-    const confirmPassword = document.getElementById('signup-confirm-password').value;
+    let password = document.getElementById('signup-password').value;
+    let confirmPassword = document.getElementById('signup-confirm-password').value;
     const email = document.getElementById('signup-email').value;
     const contactNumber = document.getElementById('signup-contact-number').value;
     const countryCode = document.getElementById('signup-country-code').value;
@@ -39,15 +47,16 @@ function handleSignupFormSubmit(event) {
         alert("Passwords do not match. Please try again.");
         return;
     }
+    const hash_password = hashPassword(password) ;
     const signupData = {
         username: username,
-        password: password,
+        password: hash_password,
         email: email,
         contactNumber: contactNumber,
         countryCode: countryCode,
         address: address
     };
-    fetch('https://your-endpoint-url.com/X', {
+    fetch(signup_endpoint_post, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -94,6 +103,8 @@ function handleLoginFormSubmit(event) {
 
 document.getElementById('signup-form').addEventListener('submit', handleSignupFormSubmit);
 document.getElementById('login-form').addEventListener('submit', handleLoginFormSubmit);
+
+// document.getElementById('login_signup_swap').addEventListener('click' , toggleForm());
 
 
 
