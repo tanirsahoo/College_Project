@@ -43,18 +43,20 @@ function handleSignupFormSubmit(event) {
     const contactNumber = document.getElementById('signup-contact-number').value;
     const countryCode = document.getElementById('signup-country-code').value;
     const address = document.getElementById('signup-address').value;
+    const referral = document.getElementById('signup-referral').value;
     if (password !== confirmPassword) {
         alert("Passwords do not match. Please try again.");
         return;
     }
     const hash_password = hashPassword(password) ;
+    const final_contact = `${countryCode}${contactNumber}` ;
     const signupData = {
         username: username,
-        password: hash_password,
         email: email,
-        contactNumber: contactNumber,
-        countryCode: countryCode,
-        address: address
+        password: hash_password,
+        address: address,
+        referral: referral,
+        contact_number: final_contact
     };
     fetch(signup_endpoint_post, {
         method: 'POST',

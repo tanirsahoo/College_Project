@@ -1,4 +1,4 @@
-package Rental.example.Rental_Project_Work.controller;
+package Rental.example.Rental_Project_Work.Controller;
 
 import Rental.example.Rental_Project_Work.entity.PGEntity;
 import Rental.example.Rental_Project_Work.service.PGService;

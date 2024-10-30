@@ -5,10 +5,13 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Pattern;
+import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+//import org.hibernate.annotations.processing.Pattern;
 
 @Entity
 @Data
@@ -29,5 +32,7 @@ public class User {
     private String Address ;
     private int referral_id ;
     @NotBlank(message = "Please add your contact number")
-    private int contact_number ;
+    @Size(min = 11, max = 16)
+    @Pattern(regexp = "^\\+?[0-9]{10,15}$", message = "Invalid contact number format")
+    private String contact_number;
 }
