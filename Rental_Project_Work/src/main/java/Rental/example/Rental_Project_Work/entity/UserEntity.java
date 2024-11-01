@@ -1,15 +1,13 @@
-package Rental.example.Rental_Project_Work.entity;
+package Rental.example.Rental_Project_Work.Entity;
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Size;
+import jakarta.validation.constraints.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.validator.constraints.Length;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 @Entity
 @Data
@@ -37,6 +35,7 @@ public class UserEntity {
     private String referral_id ;
 
     @NotBlank(message = "Please add your contact number")
-    @Size(min=7,max=10)
+    @Size(min = 11, max = 16)
+    @Pattern(regexp = "^\\+?[0-9]{10,15}$", message = "Invalid contact number format")
     private String contact_number ;
 }

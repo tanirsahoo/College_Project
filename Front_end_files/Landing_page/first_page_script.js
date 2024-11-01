@@ -1,5 +1,3 @@
-// import { signup_endpoint_post } from "../Common_files/endpoint.js";
-
 function toggleForm() {
     const loginForm = document.getElementById('login-form');
     const signupForm = document.getElementById('signup-form');
@@ -26,38 +24,78 @@ document.getElementById('login_signup_option_open').addEventListener('click', ()
 
 
 
-const crypto = require('crypto');
 
-function hashPassword(password) {
-  const hash = crypto.createHash('sha256');
-  hash.update(password);
-  return hash.digest('hex');
+async function hashPassword(password) {
+    const encoder = new TextEncoder();
+    const data = encoder.encode(password);
+    const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+    const hashArray = Array.from(new Uint8Array(hashBuffer));
+    const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+    return hashHex;
 }
 
+
+
 function handleSignupFormSubmit(event) {
+    // console.log("Inside Signup");
     event.preventDefault();
+
     const username = document.getElementById('signup-username').value;
-    let password = document.getElementById('signup-password').value;
-    let confirmPassword = document.getElementById('signup-confirm-password').value;
+    const password = document.getElementById('signup-password').value;
+    const confirmPassword = document.getElementById('confirm-password').value;
     const email = document.getElementById('signup-email').value;
-    const contactNumber = document.getElementById('signup-contact-number').value;
-    const countryCode = document.getElementById('signup-country-code').value;
+    const contactNumber = document.getElementById('contact-number').value;
+    const countryCode = document.getElementById('country-code').value;
     const address = document.getElementById('signup-address').value;
     const referral = document.getElementById('signup-referral').value;
+
+    // Check for matching passwords
     if (password !== confirmPassword) {
         alert("Passwords do not match. Please try again.");
         return;
     }
-    const hash_password = hashPassword(password) ;
-    const final_contact = `${countryCode}${contactNumber}` ;
+
+    // Check if hashPassword function exists
+    // if (typeof hashPassword !== 'function') {
+    //     console.error('hashPassword function is not defined');
+    //     alert('Error processing password. Please try again later.');
+    //     return;
+    // }
+
+    // const hash_password = await hashPassword(password);
+    // console.log(hash_password) ;
+    // console.log(typeof hash_password[2]) ;
+
+    // let hashpassword = "" ;
+
+    // hashPassword(password).then(hash_password => {
+    //     hashpassword = hash_password ;
+    //     console.log(hash_password);  // Logs the hashed password as a string.
+    // });
+
+    // const hashedpassword = hashpassword ;
+
+
+    const final_contact = `${countryCode}${contactNumber}`;
+
     const signupData = {
         username: username,
         email: email,
-        password: hash_password,
+        password: password,
         address: address,
-        referral: referral,
+        referral_id: referral,
         contact_number: final_contact
     };
+
+    // console.log(signupData);
+
+    // Ensure the endpoint is defined and valid
+    if (!signup_endpoint_post) {
+        // console.error('Signup endpoint is not defined');
+        alert('Error submitting form. Please try again later.');
+        return;
+    }
+
     fetch(signup_endpoint_post, {
         method: 'POST',
         headers: {
@@ -65,16 +103,20 @@ function handleSignupFormSubmit(event) {
         },
         body: JSON.stringify(signupData)
     })
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) throw new Error('Invalid Referral ID');
+            return response.json();
+        })
         .then(data => {
-            console.log('Signup Success:', data);
+            // console.log('Signup Success:', data);
             alert('Signup successful!');
         })
         .catch((error) => {
-            console.error('Signup Error:', error);
-            alert('Signup failed!');
+            // console.error('Signup Error:', error);
+            alert(error.message || 'An error occurred during signup.');
         });
 }
+
 
 function handleLoginFormSubmit(event) {
     event.preventDefault();
@@ -84,7 +126,7 @@ function handleLoginFormSubmit(event) {
         email: email,
         password: password
     };
-    fetch('https://your-endpoint-url.com/X', {
+    fetch(login_endpoint_post, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -103,12 +145,11 @@ function handleLoginFormSubmit(event) {
 }
 
 
-document.getElementById('signup-form').addEventListener('submit', handleSignupFormSubmit);
+let signUp_form = document.getElementById('signup-form') ;
+console.log(signUp_form);
+signUp_form.addEventListener('submit', handleSignupFormSubmit);
+
 document.getElementById('login-form').addEventListener('submit', handleLoginFormSubmit);
-
-// document.getElementById('login_signup_swap').addEventListener('click' , toggleForm());
-
-
 
 
 
