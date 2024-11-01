@@ -18,6 +18,7 @@ import java.util.Optional;
 public class UserEntityController {
     @Autowired
     private UserService userService;
+    @Autowired
     private UserRepository userRepository;
     @PostMapping("/users")
     public UserEntity saveUser(@Valid @RequestBody UserEntity useren){

@@ -120,12 +120,14 @@ function handleSignupFormSubmit(event) {
 
 function handleLoginFormSubmit(event) {
     event.preventDefault();
+    
     const email = document.getElementById('login-email').value;
     const password = document.getElementById('login-password').value;
     const loginData = {
         email: email,
         password: password
     };
+
     fetch(login_endpoint_post, {
         method: 'POST',
         headers: {
@@ -133,16 +135,28 @@ function handleLoginFormSubmit(event) {
         },
         body: JSON.stringify(loginData)
     })
-        .then(response => response.json())
-        .then(data => {
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
+    .then(data => {
+        if (data === true) {
             console.log('Login Success:', data);
             alert('Login successful!');
-        })
-        .catch((error) => {
-            console.error('Login Error:', error);
-            alert('Login failed!');
-        });
+            // Optionally, redirect to a different page or perform additional actions
+        } else {
+            console.log('Login Failed:', data);
+            alert('Invalid email or password. Please try again.');
+        }
+    })
+    .catch(error => {
+        console.error('Login Error:', error);
+        alert('An error occurred during login. Please try again later.');
+    });
 }
+
 
 
 let signUp_form = document.getElementById('signup-form') ;
