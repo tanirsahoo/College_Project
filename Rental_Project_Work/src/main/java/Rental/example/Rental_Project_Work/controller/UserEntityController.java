@@ -26,10 +26,7 @@ public class UserEntityController {
     }
     @PostMapping("/users/login")
     public ResponseEntity<Boolean> login_check(@RequestBody LoginRequest loginRequest) {
-        // Find user by email
         Optional<UserEntity> user = userRepository.findByEmail(loginRequest.getEmail());
-
-        // Check if user exists and the password matches
         if (user.isPresent() && user.get().getPassword().equals(loginRequest.getPassword())) {
             return ResponseEntity.ok(true);
         } else {
@@ -43,7 +40,6 @@ public class UserEntityController {
     @GetMapping("/users/{id}")
     public UserEntity fetchUserById(@PathVariable("id") int user_id){
         return userService.fetchUserById(user_id);
-
     }
     @DeleteMapping("/users/{id}")
     public void deleteUserById(@PathVariable("id") int user_id){
