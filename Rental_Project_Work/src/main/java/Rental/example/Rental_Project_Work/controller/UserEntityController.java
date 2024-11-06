@@ -20,11 +20,11 @@ public class UserEntityController {
     private UserService userService;
     @Autowired
     private UserRepository userRepository;
-    @PostMapping("/users")
+    @PostMapping("/users") //Signin
     public UserEntity saveUser(@Valid @RequestBody UserEntity useren){
         return userService.saveUser(useren);
     }
-    @PostMapping("/users/login")
+    @PostMapping("/users/login") //login
     public ResponseEntity<Boolean> login_check(@RequestBody LoginRequest loginRequest) {
         Optional<UserEntity> user = userRepository.findByEmail(loginRequest.getEmail());
         if (user.isPresent() && user.get().getPassword().equals(loginRequest.getPassword())) {
