@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/Registration")
+@RequestMapping("/Registration")   // http://127.0.0.1:9000/Registration/users
 public class UserEntityController {
     @Autowired
     private UserService userService;

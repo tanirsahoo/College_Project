@@ -9,10 +9,11 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@RequestMapping("PGSearch")
 public class PGEntityController {
     @Autowired
     private PGService pgService;
-    @PostMapping("/pg")
+    @PostMapping("/pg")  // http://127.0.0.1:9000/PGSearch/pg
     public PGEntity savePG(@Valid @RequestBody PGEntity pgEntity){
         return pgService.savePG(pgEntity);
     }

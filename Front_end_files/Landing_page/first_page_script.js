@@ -37,7 +37,6 @@ async function hashPassword(password) {
 
 
 function handleSignupFormSubmit(event) {
-    // console.log("Inside Signup");
     event.preventDefault();
 
     const username = document.getElementById('signup-username').value;
@@ -45,6 +44,14 @@ function handleSignupFormSubmit(event) {
     const confirmPassword = document.getElementById('confirm-password').value;
     const email = document.getElementById('signup-email').value;
     const contactNumber = document.getElementById('contact-number').value;
+
+// if (contactNumber) {
+//     contactNumber.addEventListener('input', function () {
+//         // Your code here
+//     });
+// } else {
+//     console.log("Element 'contact-number' not found");
+// }
     const countryCode = document.getElementById('country-code').value;
     const address = document.getElementById('signup-address').value;
     const referral = document.getElementById('signup-referral').value;
@@ -76,9 +83,9 @@ function handleSignupFormSubmit(event) {
     // const hashedpassword = hashpassword ;
 
 
-    const final_contact = `${countryCode}${contactNumber}`;
+    const final_contact = `${countryCode}${contactNumber}`; // final_contact = +919865163156
 
-    const signupData = {
+    const signupData = { //JSON Data
         username: username,
         email: email,
         password: password,
@@ -96,7 +103,7 @@ function handleSignupFormSubmit(event) {
         return;
     }
 
-    fetch(signup_endpoint_post, {
+    fetch(signup_endpoint_post, { // fetch('http://localhost:9000/user/' , {})
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -108,7 +115,6 @@ function handleSignupFormSubmit(event) {
             return response.json();
         })
         .then(data => {
-            // console.log('Signup Success:', data);
             alert('Signup successful!');
         })
         .catch((error) => {
@@ -160,7 +166,7 @@ function handleLoginFormSubmit(event) {
 
 
 let signUp_form = document.getElementById('signup-form') ;
-console.log(signUp_form);
+// console.log(signUp_form);
 signUp_form.addEventListener('submit', handleSignupFormSubmit);
 
 document.getElementById('login-form').addEventListener('submit', handleLoginFormSubmit);
@@ -178,16 +184,16 @@ document.getElementById('login-form').addEventListener('submit', handleLoginForm
 
 
 
-document.querySelector('.custom-multi-select').addEventListener('click', function () {
-    this.classList.toggle('open');
-});
+// document.querySelector('.custom-multi-select').addEventListener('click', function () {
+//     this.classList.toggle('open');
+// });
 
-document.querySelectorAll('.custom-multi-select select option').forEach(option => {
-    option.addEventListener('click', function (e) {
-        console.log("Clicked");
-        e.stopPropagation();
-    });
-});
+// document.querySelectorAll('.custom-multi-select select option').forEach(option => {
+//     option.addEventListener('click', function (e) {
+//         console.log("Clicked");
+//         e.stopPropagation();
+//     });
+// });
 
 
 
@@ -234,16 +240,93 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-let carousel_left_click = document.getElementById('carousel_left_click');
-console.log(carousel_left_click);
-let carousel_right_click = document.getElementById('carousel_right_click');
-console.log(carousel_right_click);
+// let carousel_left_click = document.getElementById('carousel_left_click');
+// console.log(carousel_left_click);
+// let carousel_right_click = document.getElementById('carousel_right_click');
+// console.log(carousel_right_click);
 
-carousel_left_click.addEventListener('click', () => {
-    console.log("one");
-    moveCarousel(-1);
-})
-carousel_right_click.addEventListener('click', () => {
-    console.log("two");
-    moveCarousel(1);
-})
+// carousel_left_click.addEventListener('click', () => {
+//     console.log("one");
+//     moveCarousel(-1);
+// })
+// carousel_right_click.addEventListener('click', () => {
+//     console.log("two");
+//     moveCarousel(1);
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// console.log("Happy World");
+
+//step 1: get DOM
+let nextDom = document.getElementById('next');
+let prevDom = document.getElementById('prev');
+
+let carouselDom = document.querySelector('.carousel');
+let SliderDom = carouselDom.querySelector('.carousel .list');
+let thumbnailBorderDom = document.querySelector('.carousel .thumbnail');
+let thumbnailItemsDom = thumbnailBorderDom.querySelectorAll('.item');
+let timeDom = document.querySelector('.carousel .time');
+
+console.log(nextDom) ;
+console.log(prevDom) ;
+console.log(carouselDom) ;
+console.log(SliderDom) ;
+console.log(thumbnailBorderDom) ;
+console.log(thumbnailItemsDom) ;
+console.log(timeDom) ;
+
+
+thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
+let timeRunning = 3000;
+let timeAutoNext = 7000;
+
+nextDom.onclick = function(){
+    showSlider('next');    
+}
+
+prevDom.onclick = function(){
+    showSlider('prev');    
+}
+let runTimeOut;
+let runNextAuto = setTimeout(() => {
+    next.click();
+}, timeAutoNext)
+function showSlider(type){
+    let  SliderItemsDom = SliderDom.querySelectorAll('.carousel .list .item');
+    let thumbnailItemsDom = document.querySelectorAll('.carousel .thumbnail .item');
+    
+    if(type === 'next'){
+        SliderDom.appendChild(SliderItemsDom[0]);
+        thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
+        carouselDom.classList.add('next');
+    }else{
+        SliderDom.prepend(SliderItemsDom[SliderItemsDom.length - 1]);
+        thumbnailBorderDom.prepend(thumbnailItemsDom[thumbnailItemsDom.length - 1]);
+        carouselDom.classList.add('prev');
+    }
+    clearTimeout(runTimeOut);
+    runTimeOut = setTimeout(() => {
+        carouselDom.classList.remove('next');
+        carouselDom.classList.remove('prev');
+    }, timeRunning);
+
+    clearTimeout(runNextAuto);
+    runNextAuto = setTimeout(() => {
+        next.click();
+    }, timeAutoNext)
+}
