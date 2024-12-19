@@ -1900,4 +1900,5 @@
 }
 .news_letter_social img:hover{
     border: 2px solid white;
+    transition: 0.1s linear;
 }

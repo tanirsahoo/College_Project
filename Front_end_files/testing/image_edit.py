@@ -1,24 +1,34 @@
-from PIL import Image
+def minimum_difference(measurements):
+    if measurements is None or len(measurements) < 2:
+        print("Insufficient data to calculate differences.")
+        return
 
-def crop_center(image_path, output_path, crop_width=1920, crop_height=1080):
-    # Open the image file
-    img = Image.open(image_path)
-    img_width, img_height = img.size
+    # Sort the list to calculate differences between consecutive elements
+    measurements.sort()
+    print(measurements)
 
-    # Calculate the coordinates for the center crop
-    left = (img_width - crop_width) / 2
-    top = (img_height - crop_height) / 2
-    right = (img_width + crop_width) / 2
-    bottom = (img_height + crop_height) / 2
+    # Initialize variables to find the minimum difference
+    min_difference = float('inf')
+    result_pairs = []
 
-    # Crop the center of the image
-    img_cropped = img.crop((left, top, right, bottom))
+    # Calculate the minimum difference
+    for i in range(len(measurements) - 1):
+        diff = abs(measurements[i + 1] - measurements[i])
 
-    # Save the cropped image
-    img_cropped.save(output_path)
-    print(f"Image cropped to {crop_width}x{crop_height} and saved at {output_path}")
+        if diff < min_difference:
+            min_difference = diff
+            result_pairs.clear()  # Clear old pairs since we found a smaller difference
+            result_pairs.append((measurements[i], measurements[i + 1]))
+        elif diff == min_difference:
+            result_pairs.append((measurements[i], measurements[i + 1]))
 
-# Example usage
-image_path = "input.jpg"  # Replace with your image path
-output_path = "output_cropped.jpg"  # Replace with desired output path
-crop_center(image_path, output_path)
+    # Sort the pairs with the minimum difference
+    result_pairs.sort()
+
+    # Print the pairs with the minimum difference
+    for pair in result_pairs:
+        print(f"{pair[0]} {pair[1]}")
+
+
+measurements = [-1 , 3 , 6 , -5 , 0]
+minimum_difference(measurements)

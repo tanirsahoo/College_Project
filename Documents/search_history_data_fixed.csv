@@ -1,0 +1,16 @@
+User_id,PG_Address,Map_location,Pin_code,State,Type,Cost,Duration,Feature_type
+1,PG92,"(19.0761, 72.8778)",700001,Tamil Nadu,single bed,9222,10,market
+5,PG58,"(12.9716, 77.5946)",400001,Tamil Nadu,triple bed,10971,3,airport
+4,PG89,"(28.7041, 77.1025)",110001,West Bengal,triple bed,9691,1,railway station
+4,PG98,"(12.9716, 77.5946)",400001,West Bengal,single bed,8142,7,market
+4,PG72,"(19.0761, 72.8778)",600001,West Bengal,single bed,9919,3,airport
+3,PG61,"(22.5726, 88.3639)",400001,Karnataka,double bed,11992,8,railway station
+5,PG39,"(28.7041, 77.1025)",700001,Maharashtra,double bed,5686,4,market
+4,PG1,"(22.5726, 88.3639)",110001,Delhi,double bed,11679,4,market
+3,PG3,"(12.9716, 77.5946)",560001,Delhi,double bed,11339,10,market
+2,PG77,"(19.0761, 72.8778)",700001,Karnataka,triple bed,7769,5,railway station
+2,PG92,"(19.0761, 72.8778)",700001,Tamil Nadu,single bed,9222,10,market
+3,PG62,"(19.0761, 72.8778)",110001,West Bengal,double bed,8780,5,railway station
+3,PG63,"(12.9716, 77.5946)",600001,Tamil Nadu,double bed,6368,4,airport
+5,PG25,"(13.0827, 80.2707)",700001,West Bengal,single bed,7327,5,airport
+5,PG56,"(22.5726, 88.3639)",700001,West Bengal,double bed,14647,10,airport
