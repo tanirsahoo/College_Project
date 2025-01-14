@@ -160,13 +160,14 @@
   max-width: 200px;
   display: block;
   text-align: center;
+  margin-left: 0.5rem;
 }
 
 .submit-btn:hover {
   background-color: #a18f6f;
 }
 .options_of_filter{
-  margin: 0rem 1rem;
+  margin: 0rem 0.5rem;
 }
 
 
@@ -190,12 +191,12 @@
   background-color: #e8dcc7;
 }
 .searching_box{
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  padding: 0.2rem 0.2rem;
+  padding: 0.3rem 0.5rem;
   width: 30rem;
   outline: none ;
   background-color: rgb(255, 255, 255);
@@ -203,8 +204,8 @@
   border-radius: 4px;
 }
 .search_box_submit{
-  font-size: 1.3rem;
-  padding: 0.2rem 1rem;
+  font-size: 1rem;
+  padding: 0.3rem 1rem;
   outline: none;
   background-color: rgb(255, 255, 255);
   border: none ;
@@ -248,15 +249,22 @@
   justify-content: center;
   padding: 20px;
   gap: 20px;
+  margin: 0rem 5rem;
 }
 
 .custom-pamphlet {
   background-color: #fff;
-  width: calc(25% - 20px);
+  /* width: calc(25% - 20px); */
+  width: 22rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  margin: 0rem 1.5rem;
+}
+.custom-pamphlet[id^="pamphlet-custom-"]:nth-child(odd) {
+  background-color: rgb(226, 224, 224);
 }
 
 .custom-pamphlet:hover {
@@ -264,27 +272,27 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.carousel_inside {
+.media-carousel {
   display: flex;
   overflow: hidden;
   position: relative;
   height: 250px;
 }
 
-.carousel_inside img,
-.carousel_inside video {
+.media-carousel img,
+.media-carousel video {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: none;
 }
 
-.carousel_inside img.active,
-.carousel_inside video.active {
+.media-carousel img.active,
+.media-carousel video.active {
   display: block;
 }
 
-.carousel-buttons {
+.media-carousel-buttons {
   position: absolute;
   top: 50%;
   left: 0;
@@ -295,7 +303,7 @@
   pointer-events: none;
 }
 
-.carousel-button {
+.media-carousel-button {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;

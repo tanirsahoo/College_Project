@@ -1,0 +1,14 @@
+*{
+    margin: 0 ;
+    padding: 0 ;
+    transition: 0.1s linear;
+}
+.contact_page_background {
+    height: 60vh;
+    width: 100%;
+    background-image: url('/Media_Files/Contact_us_media/pexels-pixabay-164595.jpg');
+    background-position-x: center;
+    background-position-y: 64%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

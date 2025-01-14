@@ -3,8 +3,8 @@ const items = [
         title: "Item 1",
         description: "Description for Item 1",
         media: [
-            "https://via.placeholder.com/300x200",
-            "https://www.w3schools.com/html/mov_bbb.mp4"
+            "/Media_Files/1.jpg",
+            "/Media_Files/2.jpeg"
         ],
         link: "#"
     },
@@ -12,8 +12,8 @@ const items = [
         title: "Item 2",
         description: "Description for Item 2",
         media: [
-            "https://via.placeholder.com/300x200",
-            "https://www.w3schools.com/html/mov_bbb.mp4"
+            "/Media_Files/3.jpg",
+            "/Media_Files/1.jpg"
         ],
         link: "#"
     },
@@ -21,18 +21,64 @@ const items = [
         title: "Item 3",
         description: "Description for Item 3",
         media: [
-            "https://via.placeholder.com/300x200",
-            "https://www.w3schools.com/html/mov_bbb.mp4"
+            "/Media_Files/4.jpg",
+            "/Media_Files/2.jpeg"
+        ],
+        link: "#"
+    },
+    {
+        title: "Item 4",
+        description: "Description for Item 1",
+        media: [
+            "/Media_Files/1.jpg",
+            "/Media_Files/2.jpeg"
+        ],
+        link: "#"
+    },
+    {
+        title: "Item 5",
+        description: "Description for Item 2",
+        media: [
+            "/Media_Files/3.jpg",
+            "/Media_Files/1.jpg"
+        ],
+        link: "#"
+    },
+    {
+        title: "Item 6",
+        description: "Description for Item 3",
+        media: [
+            "/Media_Files/4.jpg",
+            "/Media_Files/2.jpeg"
+        ],
+        link: "#"
+    },
+    {
+        title: "Item 3",
+        description: "Description for Item 3",
+        media: [
+            "/Media_Files/4.jpg",
+            "/Media_Files/2.jpeg"
+        ],
+        link: "#"
+    },
+    {
+        title: "Item 4",
+        description: "Description for Item 1",
+        media: [
+            "/Media_Files/1.jpg",
+            "/Media_Files/2.jpeg"
         ],
         link: "#"
     }
 ];
 
-const pamphletSection = document.getElementById('pamphletSection');
+let pamphletCounter = 1; // Initialize a counter for pamphlets
 
 items.forEach(item => {
     const pamphlet = document.createElement('div');
     pamphlet.classList.add('custom-pamphlet');
+    pamphlet.id = `pamphlet-custom-${pamphletCounter++}`; // Assign a unique ID
 
     let mediaHTML = '';
     item.media.forEach((media, index) => {
@@ -44,11 +90,11 @@ items.forEach(item => {
     });
 
     pamphlet.innerHTML = `
-        <div class="carousel_inside">
+        <div class="media-carousel">
             ${mediaHTML}    
-            <div class="carousel-buttons">
-                <button class="carousel-button prev">❮</button>
-                <button class="carousel-button next">❯</button>
+            <div class="media-carousel-buttons">
+                <button class="media-carousel-button prev">❮</button>
+                <button class="media-carousel-button next">❯</button>
             </div>
         </div>
         <div class="custom-pamphlet-content">
@@ -60,8 +106,8 @@ items.forEach(item => {
 
     pamphletSection.appendChild(pamphlet);
 
-    const carousel = pamphlet.querySelector('.carousel');
-    const images = carousel.querySelectorAll('img, video');
+    const mediaCarousel = pamphlet.querySelector('.media-carousel');
+    const images = mediaCarousel.querySelectorAll('img, video');
     let currentIndex = 0;
 
     const updateCarousel = (index) => {
@@ -70,12 +116,14 @@ items.forEach(item => {
         });
     };
 
-    carousel.querySelector('.prev').addEventListener('click', () => {
+    mediaCarousel.querySelector('.prev').addEventListener('click', () => {
+        console.log("Clicked Prev");
         currentIndex = (currentIndex - 1 + images.length) % images.length;
         updateCarousel(currentIndex);
     });
 
-    carousel.querySelector('.next').addEventListener('click', () => {
+    mediaCarousel.querySelector('.next').addEventListener('click', () => {
+        console.log("Clicked Next");
         currentIndex = (currentIndex + 1) % images.length;
         updateCarousel(currentIndex);
     });
