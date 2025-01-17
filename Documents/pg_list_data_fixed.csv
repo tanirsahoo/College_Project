@@ -1,0 +1,101 @@
+PG_Address,Map_location,Pin_code,State,Type,Cost,Duration,Feature_type
+PG1,"(22.5726, 88.3639)",110001,Delhi,double bed,11679,4,market
+PG2,"(19.0761, 72.8778)",600001,West Bengal,double bed,12208,2,railway station
+PG3,"(12.9716, 77.5946)",560001,Delhi,double bed,11339,10,market
+PG4,"(28.7041, 77.1025)",600001,Maharashtra,triple bed,13435,3,airport
+PG5,"(13.0827, 80.2707)",600001,West Bengal,triple bed,6205,1,market
+PG6,"(22.5726, 88.3639)",400001,Tamil Nadu,single bed,14716,8,market
+PG7,"(19.0761, 72.8778)",560001,Karnataka,single bed,5069,3,market
+PG8,"(12.9716, 77.5946)",560001,Delhi,triple bed,7444,10,market
+PG9,"(28.7041, 77.1025)",560001,Karnataka,double bed,14757,7,market
+PG10,"(13.0827, 80.2707)",600001,Karnataka,single bed,5060,10,railway station
+PG11,"(22.5726, 88.3639)",110001,West Bengal,triple bed,6327,5,market
+PG12,"(19.0761, 72.8778)",560001,Karnataka,triple bed,7420,10,market
+PG13,"(12.9716, 77.5946)",600001,Tamil Nadu,triple bed,4301,5,airport
+PG14,"(28.7041, 77.1025)",400001,Karnataka,double bed,4606,7,market
+PG15,"(13.0827, 80.2707)",110001,West Bengal,triple bed,7170,9,airport
+PG16,"(22.5726, 88.3639)",400001,Tamil Nadu,triple bed,4699,5,railway station
+PG17,"(19.0761, 72.8778)",110001,Maharashtra,triple bed,9088,1,market
+PG18,"(12.9716, 77.5946)",600001,Karnataka,triple bed,13331,10,airport
+PG19,"(28.7041, 77.1025)",700001,West Bengal,single bed,4190,10,airport
+PG20,"(13.0827, 80.2707)",110001,Maharashtra,single bed,14492,1,railway station
+PG21,"(22.5726, 88.3639)",400001,Maharashtra,triple bed,4980,2,market
+PG22,"(19.0761, 72.8778)",600001,Delhi,double bed,6975,6,market
+PG23,"(12.9716, 77.5946)",110001,Tamil Nadu,single bed,10102,9,airport
+PG24,"(28.7041, 77.1025)",700001,Karnataka,triple bed,5184,8,market
+PG25,"(13.0827, 80.2707)",700001,West Bengal,single bed,7327,5,airport
+PG26,"(22.5726, 88.3639)",560001,Delhi,single bed,7394,1,market
+PG27,"(19.0761, 72.8778)",560001,Tamil Nadu,double bed,12319,7,airport
+PG28,"(12.9716, 77.5946)",400001,Delhi,triple bed,14257,5,market
+PG29,"(28.7041, 77.1025)",110001,Tamil Nadu,triple bed,5816,6,railway station
+PG30,"(13.0827, 80.2707)",110001,Tamil Nadu,double bed,9854,7,market
+PG31,"(22.5726, 88.3639)",560001,Karnataka,double bed,10709,3,market
+PG32,"(19.0761, 72.8778)",110001,Tamil Nadu,triple bed,4569,10,railway station
+PG33,"(12.9716, 77.5946)",110001,Delhi,triple bed,9442,3,market
+PG34,"(28.7041, 77.1025)",700001,Tamil Nadu,double bed,5895,5,railway station
+PG35,"(13.0827, 80.2707)",560001,Karnataka,single bed,6733,6,market
+PG36,"(22.5726, 88.3639)",600001,Karnataka,single bed,7863,9,airport
+PG37,"(19.0761, 72.8778)",560001,Delhi,double bed,11455,5,airport
+PG38,"(12.9716, 77.5946)",600001,Maharashtra,single bed,8014,1,market
+PG39,"(28.7041, 77.1025)",700001,Maharashtra,double bed,5686,4,market
+PG40,"(13.0827, 80.2707)",400001,Tamil Nadu,single bed,7009,5,market
+PG41,"(22.5726, 88.3639)",110001,West Bengal,single bed,11806,10,airport
+PG42,"(19.0761, 72.8778)",700001,Tamil Nadu,triple bed,4154,10,market
+PG43,"(12.9716, 77.5946)",110001,Delhi,triple bed,14729,5,airport
+PG44,"(28.7041, 77.1025)",400001,Delhi,single bed,5409,7,railway station
+PG45,"(13.0827, 80.2707)",400001,Delhi,single bed,4784,4,airport
+PG46,"(22.5726, 88.3639)",700001,Delhi,triple bed,12096,1,airport
+PG47,"(19.0761, 72.8778)",400001,Delhi,triple bed,11560,5,railway station
+PG48,"(12.9716, 77.5946)",600001,Karnataka,triple bed,11343,7,airport
+PG49,"(28.7041, 77.1025)",400001,Maharashtra,double bed,11206,10,market
+PG50,"(13.0827, 80.2707)",110001,Delhi,single bed,9596,10,market
+PG51,"(22.5726, 88.3639)",110001,West Bengal,triple bed,9801,6,airport
+PG52,"(19.0761, 72.8778)",110001,West Bengal,single bed,6806,5,market
+PG53,"(12.9716, 77.5946)",110001,West Bengal,double bed,4537,4,airport
+PG54,"(28.7041, 77.1025)",600001,West Bengal,double bed,9986,2,market
+PG55,"(13.0827, 80.2707)",560001,Karnataka,triple bed,5841,4,market
+PG56,"(22.5726, 88.3639)",700001,West Bengal,double bed,14647,10,airport
+PG57,"(19.0761, 72.8778)",110001,Delhi,single bed,12716,10,market
+PG58,"(12.9716, 77.5946)",400001,Tamil Nadu,triple bed,10971,3,airport
+PG59,"(28.7041, 77.1025)",110001,West Bengal,single bed,9625,10,market
+PG60,"(13.0827, 80.2707)",400001,Karnataka,single bed,6950,1,market
+PG61,"(22.5726, 88.3639)",400001,Karnataka,double bed,11992,8,railway station
+PG62,"(19.0761, 72.8778)",110001,West Bengal,double bed,8780,5,railway station
+PG63,"(12.9716, 77.5946)",600001,Tamil Nadu,double bed,6368,4,airport
+PG64,"(28.7041, 77.1025)",400001,West Bengal,double bed,10655,8,railway station
+PG65,"(13.0827, 80.2707)",400001,Karnataka,double bed,12173,7,airport
+PG66,"(22.5726, 88.3639)",110001,Maharashtra,triple bed,8495,2,railway station
+PG67,"(19.0761, 72.8778)",400001,Delhi,single bed,14893,1,market
+PG68,"(12.9716, 77.5946)",400001,Karnataka,single bed,13163,11,airport
+PG69,"(28.7041, 77.1025)",110001,West Bengal,single bed,10002,4,airport
+PG70,"(13.0827, 80.2707)",110001,Delhi,single bed,10614,8,market
+PG71,"(22.5726, 88.3639)",700001,West Bengal,double bed,13358,2,airport
+PG72,"(19.0761, 72.8778)",600001,West Bengal,single bed,9919,3,airport
+PG73,"(12.9716, 77.5946)",600001,Maharashtra,triple bed,14966,1,railway station
+PG74,"(28.7041, 77.1025)",400001,Delhi,triple bed,14174,1,airport
+PG75,"(13.0827, 80.2707)",600001,Delhi,single bed,4853,3,market
+PG76,"(22.5726, 88.3639)",400001,Maharashtra,single bed,8146,11,railway station
+PG77,"(19.0761, 72.8778)",700001,Karnataka,triple bed,7769,5,railway station
+PG78,"(12.9716, 77.5946)",110001,West Bengal,triple bed,4574,3,market
+PG79,"(28.7041, 77.1025)",110001,Tamil Nadu,double bed,5148,1,market
+PG80,"(13.0827, 80.2707)",110001,West Bengal,triple bed,10293,1,railway station
+PG81,"(22.5726, 88.3639)",600001,West Bengal,double bed,10457,8,airport
+PG82,"(19.0761, 72.8778)",700001,Karnataka,double bed,11509,10,railway station
+PG83,"(12.9716, 77.5946)",600001,West Bengal,double bed,13907,11,market
+PG84,"(28.7041, 77.1025)",600001,Maharashtra,double bed,8777,2,railway station
+PG85,"(13.0827, 80.2707)",700001,Maharashtra,double bed,7854,3,market
+PG86,"(22.5726, 88.3639)",700001,Delhi,single bed,6491,2,railway station
+PG87,"(19.0761, 72.8778)",700001,Tamil Nadu,triple bed,14852,3,airport
+PG88,"(12.9716, 77.5946)",700001,West Bengal,double bed,7124,7,railway station
+PG89,"(28.7041, 77.1025)",110001,West Bengal,triple bed,9691,1,railway station
+PG90,"(13.0827, 80.2707)",560001,Karnataka,triple bed,7051,10,market
+PG91,"(22.5726, 88.3639)",560001,Maharashtra,double bed,4004,8,market
+PG92,"(19.0761, 72.8778)",700001,Tamil Nadu,single bed,9222,10,market
+PG93,"(12.9716, 77.5946)",560001,Delhi,double bed,9315,10,railway station
+PG94,"(28.7041, 77.1025)",560001,Maharashtra,single bed,8869,10,airport
+PG95,"(13.0827, 80.2707)",700001,Delhi,triple bed,4876,2,market
+PG96,"(22.5726, 88.3639)",560001,Karnataka,single bed,13183,3,market
+PG97,"(19.0761, 72.8778)",600001,Karnataka,single bed,11027,9,railway station
+PG98,"(12.9716, 77.5946)",400001,West Bengal,single bed,8142,7,market
+PG99,"(28.7041, 77.1025)",400001,Tamil Nadu,triple bed,10966,4,airport
+PG100,"(13.0827, 80.2707)",700001,Delhi,triple bed,11079,10,airport

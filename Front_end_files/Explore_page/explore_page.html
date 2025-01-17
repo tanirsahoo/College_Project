@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="explore_page.css">
+    <link rel="stylesheet" href="../Landing_page/first_page_styling.css">
+    
+    <link rel="shortcut icon" href="/Media_Files/TERRA-NEST (3).png" type="image/x-icon">
+
+
+
+
+
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap"
+        rel="stylesheet">
+    <title>TerraNest | PG Renting Website</title>
+</head>
+<body>
+    <nav class="newnavbar">
+        <div class="logo">
+            <img src="/Media_Files/TERRA-NEST__3_-removebg-preview.png" alt="Logo">
+        </div>
+        <div class="options">
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Properties</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Explore</a></li>
+                        <li id="login_signup_option_open"><a href="#">Register</a></li>
+                        <!-- <li><a href="#"></a></li> -->
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">About Us</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Platform Guide</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="social-icons">
+            <a href="#"><img src="/Media_Files/facebook.png" alt="Facebook Logo" srcset=""></a>
+            <a href="#"><img src="/Media_Files/instagram.png" alt="Instagram Logo" srcset=""></a>
+            <a href="#"><img src="/Media_Files/Linkedin.png" alt="LinkedIn Logo" srcset=""></a>
+        </div>
+    </nav>
+
+    <section class="explore_page_background"> 
+    </section>
+
+
+    <section class="filter_options_explore_page">
+        <div class="options_of_filter" id="filtering_options_1">
+            <div class="menu-container">
+                <button class="menu-toggle-btn">PG Type <span class="toggle-arrow">&#9662;</span></button>
+                <ul class="menu-options">
+                    <li class="menu-item" data-value="Single Bed">Single Bed</li>
+                    <li class="menu-item" data-value="Twin Bed">Twin Bed</li>
+                    <li class="menu-item" data-value="Three Sharing">Three Sharing</li>
+                    <li class="menu-item" data-value="Dormitory Sharing">Dormitory Sharing</li>
+                </ul>
+            </div>
+        </div>
+        <div class="options_of_filter" id="filtering_options_1">
+            <div class="menu-container">
+                <button class="menu-toggle-btn">Gender Type <span class="toggle-arrow">&#9662;</span></button>
+                <ul class="menu-options">
+                    <li class="menu-item" data-value="Male">Male</li>
+                    <li class="menu-item" data-value="Female">Female</li>
+                    <li class="menu-item" data-value="Co-Living">Co-Living</li>
+                </ul>
+            </div>
+        </div>
+        <div class="options_of_filter" id="filtering_options_2">
+            <div class="menu-container">
+                <button class="menu-toggle-btn">Price Range <span class="toggle-arrow">&#9662;</span></button>
+                <ul class="menu-options">
+                    <li class="menu-item" data-value="0-5000">Rs.0 - Rs.5000</li>
+                    <li class="menu-item" data-value="5000-10000">Rs.5000 - Rs.10000</li>
+                    <li class="menu-item" data-value="10000-15000">Rs.10000 - Rs.15000</li>
+                    <li class="menu-item" data-value="Above 15000">Above Rs.15000</li>
+                </ul>
+            </div>
+        </div>
+        <div class="options_of_filter" id="filtering_options_3">
+            <div class="menu-container">
+                <button class="menu-toggle-btn">Rating <span class="toggle-arrow">&#9662;</span></button>
+                <ul class="menu-options">
+                    <li class="menu-item" data-value="0-1">0-1</li>
+                    <li class="menu-item" data-value="1-2">1-2</li>
+                    <li class="menu-item" data-value="2-3">2-3</li>
+                    <li class="menu-item" data-value="3-4">3-4</li>
+                    <li class="menu-item" data-value="4-5">4-5</li>
+                </ul>
+            </div>
+        </div>
+        <div class="options_of_filter" id="filtering_options_4">
+            <div class="menu-container">
+                <button class="menu-toggle-btn">Nearby Preference <span class="toggle-arrow">&#9662;</span></button>
+                <ul class="menu-options">
+                    <li class="menu-item" data-value="Hospital">Hospital</li>
+                    <li class="menu-item" data-value="Park">Park</li>
+                    <li class="menu-item" data-value="Power Backup">Power Backup</li>
+                    <li class="menu-item" data-value="Shopping Mall">Shopping Mall</li>
+                    <li class="menu-item" data-value="Garage">Garage</li>
+                    <li class="menu-item" data-value="Train/Metro Stations">Train/Metro Stations</li>
+                </ul>
+            </div>
+        </div>
+        <div class="options_of_filter" id="filtering_options_5">
+            <div class="menu-container">
+                <button class="menu-toggle-btn">City <span class="toggle-arrow">&#9662;</span></button>
+                <ul class="menu-options">
+                    <li class="menu-item" data-value="Mumbai">Mumbai</li>
+                    <li class="menu-item" data-value="Delhi">Delhi</li>
+                    <li class="menu-item" data-value="Bangalore">Bangalore</li>
+                    <li class="menu-item" data-value="Hyderabad">Hyderabad</li>
+                    <li class="menu-item" data-value="Chennai">Chennai</li>
+                    <li class="menu-item" data-value="Kolkata">Kolkata</li>
+                    <li class="menu-item" data-value="Pune">Pune</li>
+                    <li class="menu-item" data-value="Ahmedabad">Ahmedabad</li>
+                    <li class="menu-item" data-value="Jaipur">Jaipur</li>
+                    <li class="menu-item" data-value="Lucknow">Lucknow</li>
+                    <li class="menu-item" data-value="Surat">Surat</li>
+                    <li class="menu-item" data-value="Kanpur">Kanpur</li>
+                    <li class="menu-item" data-value="Nagpur">Nagpur</li>
+                    <li class="menu-item" data-value="Visakhapatnam">Visakhapatnam</li>
+                    <li class="menu-item" data-value="Bhopal">Bhopal</li>
+                    <li class="menu-item" data-value="Patna">Patna</li>
+                    <li class="menu-item" data-value="Thiruvananthapuram">Thiruvananthapuram</li>
+                    <li class="menu-item" data-value="Indore">Indore</li>
+                    <li class="menu-item" data-value="Vadodara">Vadodara</li>
+                    <li class="menu-item" data-value="Coimbatore">Coimbatore</li>
+                    <li class="menu-item" data-value="Mysore">Mysore</li>
+                    <li class="menu-item" data-value="Gurgaon">Gurgaon</li>
+                    <li class="menu-item" data-value="Noida">Noida</li>
+                    <li class="menu-item" data-value="Chandigarh">Chandigarh</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Submit Button -->
+        <button id="submit-button" class="submit-btn">Refresh</button>
+    </section>
+
+
+
+    <section class="search_box_for_location_search">
+        <form class="search_box_form">
+            <input type="search" name="search_box" id="search_box" class="searching_box" placeholder="Enter your requirements..." required>
+            <input type="button" value="Search" class="search_box_submit" id="search_box_submit_class" onsubmit="search_work()">
+        </form>
+    </section>
+    
+
+    
+    <section class="pamphlet-section" id="pamphletSection">
+            <!-- Items will be dynamically injected here -->
+    </section>
+
+
+    <footer class="footer_part">
+        <div class="footer_inside_one">
+            <div class="footer_item_1">
+                <div class="footer_one_formatting">
+                    <div class="image_part">
+                        <img src="/Media_Files/logo_new.png" alt="Company Logo" srcset="">
+                    </div>
+                    <div class="company_details_footer">
+                        <p class="first_part">Terranest Corporation</p>
+                        <p class="company_details">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Consequatur,
+                            laudantium.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_item_2">
+                <div class="quicker_links">
+                    <div class="header_section_option_two">
+                        <p class="quick_links_section">QUICK LINKS</p>
+                    </div>
+                    <div class="para_section_option_two">
+                        <ul class="quick_links_section_options">
+                            <li class="footer_quick_links" id="footer_quick_link_1"><a href="#"
+                                    class="footer_option_link">Home</a></li>
+                            <li class="footer_quick_links" id="footer_quick_link_2"><a href="#"
+                                    class="footer_option_link">About Us</a></li>
+                            <li class="footer_quick_links" id="footer_quick_link_3"><a href="#"
+                                    class="footer_option_link">Contact</a></li>
+                            <li class="footer_quick_links" id="footer_quick_link_4"><a href="#"
+                                    class="footer_option_link">Explore</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_item_3">
+                <div class="footer_section_three_inside">
+                    <div class="header_about_us_footer">
+                        <p class="about_part">ABOUT</p>
+                        <p class="us_part">US</p>
+                    </div>
+                    <div class="footer_about_us_footer">
+                        <p class="description_footer">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Obcaecati assumenda maiores sequi!</p>
+                        <p class="description_footer">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_item_4">
+                <div class="footer_item_four_inside">
+                    <div class="first_message_footer_item_four">
+                        <p class="description_first_message_footer">Let's stay connected</p>
+                    </div>
+                    <div class="newsletter_permission_footer">
+                        <p class="subscribe_to_newsletter">
+                            Subscribe to our NewsLetter!
+                        </p>
+                        <div class="newsletter_submission_form_footer">
+                            <form id="newsletter_form">
+                                <input type="email" name="news_letter_email" id="news_letter_email" placeholder="Enter your Email" required>
+                                <button type="submit" class="footer_button" id="footer_button_id"><img src="/Media_Files/search.png" alt="search" srcset=""></button>
+                            </form>
+                        </div>
+                        <hr class="news_letter_hr">
+                        <div class="logos_for_footer">
+                            <div class="logos_for_footer_inside">
+                                <a href="#" class="news_letter_social" id="news_letter_footer_socials"><img src="/Media_Files/facebook.png" alt="FaceBook"></a>
+                                <a href="#" class="news_letter_social" id="news_letter_footer_socials"><img src="/Media_Files/instagram.png" alt="Instagram"></a>
+                                <a href="#" class="news_letter_social" id="news_letter_footer_socials"><img src="/Media_Files/Linkedin.png" alt="LinkedIn"></a>
+                                <a href="#" class="news_letter_social" id="news_letter_footer_socials"><img src="/Media_Files/Youtube.png" alt="Youtube"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        <hr class="copyright_footer_section">
+        <div class="copyright_section_paragraph">
+            <p class="copyright_para">Copyright &#169; 2024. TerraNest | All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+
+    
+    <script src="explore_page.js"></script>
+    <script src="/Explore_page/items.js"></script>
+</body>
+</html>
