@@ -1,8 +1,16 @@
-*{
-    margin: 0 ;
-    padding: 0 ;
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Permanent+Marker&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap') ;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Permanent+Marker&family=Playwrite+AU+SA:wght@100..400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
     transition: 0.1s linear;
 }
+
 .contact_page_background {
     height: 60vh;
     width: 100%;
@@ -11,4 +19,207 @@
     background-position-y: 64%;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.various_contact_facilities {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: -5rem;
+}
+
+.various_contact_infos_inside_section {
+    height: 14rem;
+    width: 15rem;
+    background-color: rgb(255, 255, 255);
+    margin: 1rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 12px 2px rgb(87, 87, 87);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.various_contact_infos_inside_section_part_1 img {
+    height: 5rem;
+    width: auto;
+}
+
+.various_contact_infos_inside_section_part_1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.written_section_contact p {
+    text-align: center;
+    font-family: "Permanent Marker", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+    letter-spacing: 0.3rem;
+    margin: 1rem 0rem;
+}
+
+.written_section_contact_details p {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 0.8rem;
+    margin: 0rem 0.5rem;
+    color: rgb(101, 100, 100);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact_query_form_and_description_section {
+    display: flex;
+    /* Use flexbox for equal-width columns */
+    flex-wrap: wrap;
+    /* Ensure responsiveness by wrapping content */
+    justify-content: space-between;
+    /* Add space between elements if needed */
+    gap: 20px;
+    /* Optional: Adjust the gap between the columns */
+    margin: 5rem 0rem;
+}
+
+.contact_query {
+    display: flex;
+    /* Use flexbox for child alignment */
+    /* align-items: center; */
+    justify-content: center;
+    width: 100%;
+    /* Ensure the container takes full width */
+    margin: 0rem 5rem;
+}
+
+.form_query {
+    flex: 1;
+    /* Distribute available space equally */
+    max-width: 48%;
+    /* Optional: Prevent columns from stretching too wide */
+    box-sizing: border-box;
+    /* Include padding and borders in width */
+}
+
+.form_query p {
+    color: rgb(0, 0, 0);
+}
+
+#form_query_contact_page_1,
+#form_query_contact_page_2 {
+    padding: 20px;
+    /* Add some padding for aesthetics */
+    /* border: 1px solid #ccc; Optional: Add a border for better visibility */
+    border-radius: 0px;
+    /* Optional: Rounded corners for modern look */
+    background-color: #ffffff;
+    /* Optional: Background color */
+}
+
+/* Ensure the form inputs and textareas are styled properly */
+#email_id_contact,
+#text_query_contact_id,
+#textarea_query_form_id {
+    width: 100%;
+    /* Take the full width of the parent */
+    padding: 10px;
+    /* Add padding for better usability */
+    margin-bottom: 15px;
+    /* Space between form elements */
+    border: 1px solid #ccc;
+    /* Border for inputs */
+    border-radius: 0px;
+    /* Optional: Rounded corners */
+    box-sizing: border-box;
+    /* Include padding and borders in width */
+    outline: none;
+    border: none;
+    border-bottom: 0.1px solid #ccc;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+}
+
+#email_id_contact::placeholder,
+#text_query_contact_id::placeholder,
+#textarea_query_form_id::placeholder {
+    color: #383838;
+    letter-spacing: 0.1rem;
+    font-size: 0.7rem;
+}
+
+.query_submit {
+    background-color: #4CAF50;
+    /* Submit button color */
+    color: white;
+    /* Text color */
+    padding: 10px 20px;
+    /* Adjust padding */
+    border: none;
+    /* Remove border */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Add a pointer cursor */
+}
+
+.query_submit:hover {
+    background-color: #45a049;
+    /* Darker green on hover */
+}
+
+/* Add responsive design for smaller screens */
+@media (max-width: 768px) {
+    .form_query {
+        max-width: 100%;
+        /* Stack the columns vertically */
+        margin-bottom: 20px;
+        /* Add space between stacked elements */
+    }
+}
+
+
+
+
+
+.header_query_page {
+    font-family: "Montserrat", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.first_paragraph_query_page{
+    font-family: "Playwrite AU SA", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    margin: 2rem 0rem;
+    font-size: 0.8rem;
+}
+.second_paragraph_query_page{
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 400 ;
+    font-style: normal;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.5rem;
+    font-size: 0.8rem;
+}
+.form_query hr{
+    background-color: black;
+    width: 80%;
 }
