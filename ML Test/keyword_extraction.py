@@ -10,34 +10,31 @@
 # !pip install spacy
 # !python -m spacy download en_core_web_sm
 
+#todo: endpoint: http://127.0.0.1:5000/extract_keywords
+#optimize: Post request: POST http://127.0.0.1:5000/extract_keywords -H "Content-Type: application/json" -d '{"address": "PG in Kolkata"}'
 
+
+from flask import Flask, request, jsonify
 import spacy
 from spacy.matcher import Matcher
 
+app = Flask(__name__)
+nlp = spacy.load("en_core_web_sm")
+
 
 def extract_keywords(address):
-
-    nlp = spacy.load("en_core_web_sm")
-
-
     matcher = Matcher(nlp.vocab)
-
     pin_code_pattern = [{"SHAPE": "dddd"}, {"SHAPE": "d"}]
     matcher.add("PIN_CODE", [pin_code_pattern])
-
     proper_noun_pattern = [{"POS": "PROPN"}]
     matcher.add("PROPER_NOUN", [proper_noun_pattern])
 
-
     doc = nlp(address)
-
     keywords = set()
-
 
     matches = matcher(doc)
     for match_id, start, end in matches:
         keywords.add(doc[start:end].text)
-
 
     for ent in doc.ents:
         if ent.label_ in ["GPE", "LOC", "ORG"]:
@@ -46,12 +43,18 @@ def extract_keywords(address):
     return list(keywords)
 
 
-addresses = [
-    "PG in Kolkata",
-]
+@app.route("/extract_keywords", methods=["POST"])
+def extract_keywords_api():
+    try:
+        data = request.get_json()
+        address = data.get("address", "")
+        if not address:
+            return jsonify({"error": "No address provided"}), 400
 
+        keywords = extract_keywords(address)
+        return jsonify({"address": address, "keywords": keywords})
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
 
-for address in addresses:
-    print(f"Address: {address}")
-    print("Extracted Keywords:", extract_keywords(address))
-    print("-" * 50)
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000, debug=True)
