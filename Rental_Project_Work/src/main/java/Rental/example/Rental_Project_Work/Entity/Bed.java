@@ -20,20 +20,17 @@ public class Bed {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int Bed_id ;
 
-    @NotBlank(message = "Please enter PG id.")
     private String PG_id ;
 
     private String video ;
 
     private String image ;
 
-    @NotBlank(message = "Please enter the cost.")
     private String cost ;
 
     private String duration ;
 
     private String user_id ;
 
-    @NotBlank(message = "Please enter the type of property(2 Bed room , 1 Bed room , 3 Bed room etc).")
     private String type ; //Value will be Single Bed , Dual Bed, Triple Bed or Dormatory
 }
