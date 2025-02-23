@@ -1,6 +1,6 @@
-package Rental.example.Rental_Project_Work.repository;
+package Rental.example.Rental_Project_Work.Repository;
 
-import Rental.example.Rental_Project_Work.entity.PGEntity;
+import Rental.example.Rental_Project_Work.Entity.PGEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -15,12 +15,21 @@ login_signup_close.addEventListener('click', () => {
 });
 
 
+// console.log(document.getElementById('login_signup_option_open'));
+document.querySelectorAll('.login_signup_option_open').forEach(div => {
+    div.addEventListener('click', () => {
+        // Select the animation target by its ID
+        let animation_item = document.getElementById('login_signup_option_id');
 
-document.getElementById('login_signup_option_open').addEventListener('click', () => {
-    let animation_item = document.getElementById('login_signup_option_id');
-    animation_item.style.animationName = `login_appear`;
-    animation_item.style.animationDelay = `0s`;
+        if (animation_item) {
+            animation_item.style.animationName = `login_appear`;
+            animation_item.style.animationDelay = `0s`;
+        } else {
+            console.error("Target element #login_signup_option_id not found!");
+        }
+    });
 });
+
 
 
 

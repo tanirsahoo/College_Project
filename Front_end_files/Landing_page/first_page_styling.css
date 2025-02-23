@@ -328,7 +328,7 @@
     display: flex;
     /* align-items: center; */
     justify-content: center;
-    top: 4rem;
+    top: 3rem;
 }
 
 .reject_all_option {
@@ -462,7 +462,7 @@
 
 .form-container {
     background-color: #ffffff;
-    width: 400px;
+    width: auto;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
@@ -525,12 +525,31 @@
 .hidden {
     display: none;
 }
+.signup-form-all-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.signup-form-first-section{
+    margin-right: 1rem;
+    width: 50%;
+}
+.signup-form-second-section{
+    margin-left: 1rem;
+    width: 50%;
+}
 
 .close_this_section {
     color: white;
     margin: 0rem 0rem 0rem 2rem;
     cursor: pointer;
     font-size: 2rem;
+}
+#login-form{
+    width: 300px;
+}
+#signup-form{
+    width: 655px;
 }
 
 
@@ -885,7 +904,7 @@
     background-size: cover;
     display: flex;
     align-items: center;
-    margin: 5rem 0rem 5rem 0rem;
+    margin: 8rem 0rem 5rem 0rem;
 }
 
 .landing_page_second_desc_dection_inside_2 {

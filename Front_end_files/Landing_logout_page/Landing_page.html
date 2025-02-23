@@ -4,18 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="contact_us_page.css">
-    <link rel="stylesheet" href="../Landing_page/first_page_styling.css">
-    <link rel="stylesheet" href="../Explore_page/explore_page.css">
-
+    <link rel="stylesheet" href="/Landing_page/first_page_styling.css">
     <link rel="shortcut icon" href="/Media_Files/TERRA-NEST (3).png" type="image/x-icon">
 
 
 
-    
 
-        
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 
 
 
@@ -73,6 +67,29 @@
             <a href="#"><img src="/Media_Files/Linkedin.png" alt="LinkedIn Logo" srcset=""></a>
         </div>
     </nav>
+
+
+    <section class="background_image_section">
+        <div class="background_image">
+            <div class="content_inside_div">
+                <h1 class="content_header_inside_div">
+                    Rent Smart. Live Happy.
+                </h1>
+                <h1 class="content_header_inside_div_two">Find Your Ideal Paying Guest Space Now!
+                </h1>
+                <hr class="horizontal_rule">
+                <div class="content_header_Explore">
+                    <div class="content_header_button">EXPLORE</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="darken_gradient">
+        <div class="darken_gradient_color"></div>
+    </section>
 
 
     <!-- <section class="login_signup_option" id="login_signup_option_id">
@@ -342,109 +359,383 @@
         </div>
     </section> -->
 
-    <section class="contact_page_background">
-    </section>
 
-
-    <section class="various_contact_facilities">
-        <div class="various_contact_infos_inside_section" id="various_contact_infos_inside_section_1">
-            <div class="bounded_section_division">
-                <div class="various_contact_infos_inside_section_part_1">
-                    <img src="/Media_Files/Contact_us_media/offc.png" alt="Office Logo" srcset="">
-                </div>
-                <div class="written_section_contact">
-                    <p>Office</p>
-                </div>
-                <div class="written_section_contact_details">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, recusandae.</p>
-                </div>
-            </div>
-        </div>
-        <div class="various_contact_infos_inside_section" id="various_contact_infos_inside_section_2">
-            <div class="bounded_section_division">
-                <div class="various_contact_infos_inside_section_part_1">
-                    <img src="/Media_Files/Contact_us_media/Mail.png" alt="Office Logo" srcset="">
-                </div>
-                <div class="written_section_contact">
-                    <p>E-Mail</p>
-                </div>
-                <div class="written_section_contact_details">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, recusandae.</p>
-                </div>
-            </div>
-        </div>
-        <div class="various_contact_infos_inside_section" id="various_contact_infos_inside_section_3">
-            <div class="bounded_section_division">
-                <div class="various_contact_infos_inside_section_part_1">
-                    <img src="/Media_Files/Contact_us_media/location.png" alt="Office Logo" srcset="">
-                </div>
-                <div class="written_section_contact">
-                    <p>On Map</p>
-                </div>
-                <div class="written_section_contact_details">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, recusandae.</p>
-                </div>
-            </div>
-        </div>
-        <div class="various_contact_infos_inside_section" id="various_contact_infos_inside_section_4">
-            <div class="bounded_section_division">
-                <div class="various_contact_infos_inside_section_part_1">
-                    <img src="/Media_Files/Contact_us_media/pngimg.com - phone_PNG48972.png" alt="Office Logo"
-                        srcset="">
-                </div>
-                <div class="written_section_contact">
-                    <p>Phone</p>
-                </div>
-                <div class="written_section_contact_details">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, recusandae.</p>
-                </div>
+    <section class="cookies_policy">
+        <div class="set_cookies_option">
+            <h1 class="cookies_permission_content">
+                This website uses cookies
+            </h1>
+            <p class="cookies_permission_description">
+                By clicking “Accept All”, you agree that we can store cookies on your device and disclose information in
+                accordance with our Cookie Policy
+            </p>
+            <div class="buttons_cookies">
+                <div class="reject_all_option">REJECT ALL</div>
+                <div class="accept_all_option">ACCEPT ALL</div>
             </div>
         </div>
     </section>
 
 
+    <section class="booking_details_pamplet">
+        <div class="booking_details_pamplet_div">
+            <form class="booking_form">
+                <div class="type_pg_bed">
+                    <select id="pg_bed_type" name="pg_bed_type" required>
+                        <option value="" disabled selected>Select Bed Type</option>
+                        <option value="1_bed">1 Bedroom</option>
+                        <option value="2_bed">2 Bedroom</option>
+                        <option value="3_bed">3 Bedroom</option>
+                        <option value="shared">Shared</option>
+                    </select>
+                </div>
+                <div class="deration_pg_bed">
+                    <select id="bed_duration" name="bed_duration" required>
+                        <option value="" disabled selected>Select Duration</option>
+                        <option value="few_months">Few Months</option>
+                        <option value="whole_year">Whole Year</option>
+                        <option value="more_than_year">Tenure of more than one year</option>
+                        <option value="unknown">Unknown</option>
+                    </select>
+                </div>
+                <!-- <div class="nearby_location_of_pg">
+                    <div class="custom-multi-select">
+                        <select id="landmarks" name="landmarks[]" multiple required>
+                            <option value="shopping_mall">Shopping Mall</option>
+                            <option value="bazar">Bazar</option>
+                            <option value="hospital">Hospital</option>
+                            <option value="school">School</option>
+                            <option value="park">Park</option>
+                        </select>
+                    </div>
+                </div> -->
+                <div class="location_of_the_searching_pg">
+                    <input type="text" id="location" name="location" placeholder="Enter full address with pincode"
+                        required>
+                </div>
+                <button type="submit" class="booking_submit_btn">SEARCH</button>
+            </form>
+        </div>
+    </section>
 
-    <section class="contact_query_form_and_description_section">
-        <div class="contact_query">
-            <div class="form_query" id="form_query_contact_page_1">
-                <form action="" method="post" class="form_query_contact_page_inside">
-                    <p class="paragraph_one">Email-ID</p>
-                    <br>
-                    <input type="email" name="email_query_contact" id="email_id_contact"
-                        placeholder="Enter a valid email address">
-                    <br>
-                    <p class="paragraph_one">Name</p>
-                    <br>
-                    <input type="text" name="text_query_contact" id="text_query_contact_id"
-                        placeholder="Enter your name">
-                    <br>
-                    <p class="paragraph_one">Message</p>
-                    <br>
-                    <textarea name="textarea_query_form" id="textarea_query_form_id"
-                        placeholder="Enter your message"></textarea>
-                    <br>
-                    <input type="submit" value="Submit" class="query_submit">
-                </form>
+
+    <section class="landing_page_first_desc_section">
+        <div class="landing_page_first_desc_section_insider_1">
+            <div class="landing_page_first_desc_section_insider_1_1">
+                <div class="landing_page_first_desc_section_insider_1_1_img1"><img src="/Media_Files/2.jpeg" alt=""
+                        srcset=""></div>
+                <div class="landing_page_first_desc_section_insider_1_1_img2"><img src="/Media_Files/1.jpg" alt=""
+                        srcset=""></div>
             </div>
-            <div class="form_query" id="form_query_contact_page_2">
-                <h1 class="header_query_page">Get in touch</h1>
-                <hr>
-                <p class="first_paragraph_query_page">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum
-                    facere, ex tempore mollitia delectus, amet, recusandae nulla voluptatem inventore dignissimos ipsum
-                    commodi voluptates iste obcaecati.</p>
-                <p class="second_paragraph_query_page">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-                    ratione eos unde iste rerum dolore, rem quibusdam numquam quae reiciendis perspiciatis, sapiente
-                    vitae. Fugiat, nihil!</p>
+
+
+            <div class="landing_page_first_desc_section_insider_1_2">
+                <div class="landing_page_first_desc_section_insider_1_2_part_1"></div>
+                <div class="landing_page_first_desc_section_insider_1_2_part_2">
+                    <p class="landing_page_first_desc_section_insider_1_2_part_2_header">RAISING COMFORT TO THE HIGHEST
+                        LEVEL</p>
+                </div>
+                <div class="landing_page_first_desc_section_insider_1_2_part_3">
+                    <p class="landing_page_first_desc_section_insider_1_2_part_3_header">Welcome to TerraNest Rental
+                        Platform</p>
+                </div>
+                <div class="landing_page_first_desc_section_insider_1_2_part_4">
+                    <p class="landing_page_first_desc_section_insider_1_2_part_4_header_one">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quidem saepe totam dolorum
+                        accusantium in facere commodi praesentium quibusdam adipisci.</p>
+                    <p class="landing_page_first_desc_section_insider_1_2_part_4_header_two">
+                        The rooms are arranged on the first, second and third floors. On the top floor, there is also a
+                        charming terrace or solarium available for the use of guests, from where you can enjoy the view.
+                    </p>
+                </div>
+                <div class="landing_page_first_desc_section_insider_1_2_part_5">
+                    <div class="landing_page_first_desc_section_insider_1_2_part_5_submit_button">Read More</div>
+                </div>
             </div>
         </div>
     </section>
 
 
-
-    <section class="map_of_our_office">
-        <div id="map" style="width: 100%; height: 400px;"></div>
+    <section class="landing_page_second_desc_dection">
+        <div class="landing_page_second_desc_dection_inside_1">
+            <div class="landing_page_second_desc_dection_inside_2">
+                <div class="landing_page_second_desc_dection_inside_2_1">
+                    <p class="landing_page_second_desc_dection_inside_2_1_para1">Our Amenities</p>
+                    <p class="landing_page_second_desc_dection_inside_2_1_para_2">Lorem ipsum, dolor sit amet
+                        consectetur adipisicing elit. Numquam cumque quasi reprehenderit commodi eius, inventore
+                        deleniti a ipsam in laudantium incidunt expedita magnam eum deserunt illo saepe maiores tempore
+                        odit.</p>
+                    <div class="landing_page_second_desc_dection_inside_2_amenities_first">
+                        <div class="landing_page_second_desc_dection_inside_2_amenities_part_1">
+                            <div class="landing_page_second_desc_dection_inside_2_amenities">
+                                <img src="/Media_Files/Ammenities/11.png" alt="" srcset="">
+                                <p>Study Table</p>
+                            </div>
+                            <div class="landing_page_second_desc_dection_inside_2_amenities">
+                                <img src="/Media_Files/Ammenities/12.png" alt="" srcset="">
+                                <p>Air Conditioner</p>
+                            </div>
+                            <div class="landing_page_second_desc_dection_inside_2_amenities">
+                                <img src="/Media_Files/Ammenities/13.png" alt="" srcset="">
+                                <p>Daily Meals</p>
+                            </div>
+                            <div class="landing_page_second_desc_dection_inside_2_amenities">
+                                <img src="/Media_Files/Ammenities/14.png" alt="" srcset="">
+                                <p>Attached Washroom</p>
+                            </div>
+                        </div>
+                        <div class="landing_page_second_desc_dection_inside_2_amenities_part_2">
+                            <div class="landing_page_second_desc_dection_inside_2_amenities">
+                                <img src="/Media_Files/Ammenities/15.png" alt="" srcset="">
+                                <p>Shared Wifi</p>
+                            </div>
+                            <div class="landing_page_second_desc_dection_inside_2_amenities">
+                                <img src="/Media_Files/Ammenities/16.png" alt="" srcset="">
+                                <p>Furnished Bed</p>
+                            </div>
+                            <div class="landing_page_second_desc_dection_inside_2_amenities">
+                                <img src="/Media_Files/Ammenities/17.png" alt="" srcset="">
+                                <p>Geyser</p>
+                            </div>
+                            <div class="landing_page_second_desc_dection_inside_2_amenities">
+                                <img src="/Media_Files/Ammenities/18.png" alt="" srcset="">
+                                <p>Almirah</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="landing_page_second_desc_dection_inside_2_image">
+                <img src="/Media_Files/TERRA-NEST__3_-removebg-preview.png" alt="" srcset="">
+            </div>
+        </div>
     </section>
 
+
+    <section class="description_page_landing_page">
+        <div class="description_page_landing_page_inside">
+            <div class="description_page_landing_page_inside_part_two">
+                <div class="description_page_landing_page_inside_part_two_upper_bar"></div>
+                <p class="description_page_landing_page_inside_part_two_header">RAISING COMFORT TO THE HIGHEST LEVEL</p>
+                <p class="description_page_landing_page_inside_part_two_para">Rooms & Suites</p>
+            </div>
+            <div class="description_page_landing_page_inside_part_three">
+                <p class="description_page_landing_page_inside_part_three_button"
+                    id="description_page_landing_page_inside_part_three_button_work_submit">VIEW ALL</p>
+            </div>
+        </div>
+        <div class="description_page_landing_page_inside_content">
+            <div class="description_page_landing_page_inside_content_pamplet_1">
+                <div class="image_work_description_page_landing_page_inside_content_pamplet_1"></div>
+                <p class="description_page_landing_page_inside_content_pamplet_1_para1">Superior Double Room</p>
+                <div class="description_page_landing_page_inside_content_pamplet_1_para2_price">
+                    <p class="description_page_landing_page_inside_content_pamplet_1_para2">$129</p>
+                    <p class="description_page_landing_page_inside_content_pamplet_1_para3">/ per month</p>
+                </div>
+
+            </div>
+            <div class="description_page_landing_page_inside_content_pamplet_1">
+                <div class="image_work_description_page_landing_page_inside_content_pamplet_2"></div>
+                <p class="description_page_landing_page_inside_content_pamplet_1_para1">Classic Double Room</p>
+                <div class="description_page_landing_page_inside_content_pamplet_1_para2_price">
+                    <p class="description_page_landing_page_inside_content_pamplet_1_para2">$159</p>
+                    <p class="description_page_landing_page_inside_content_pamplet_1_para3">/ per month</p>
+                </div>
+            </div>
+            <div class="description_page_landing_page_inside_content_pamplet_1">
+                <div class="image_work_description_page_landing_page_inside_content_pamplet_3"></div>
+                <p class="description_page_landing_page_inside_content_pamplet_1_para1">Comfort Triple Room</p>
+                <div class="description_page_landing_page_inside_content_pamplet_1_para2_price">
+                    <p class="description_page_landing_page_inside_content_pamplet_1_para2">$179</p>
+                    <p class="description_page_landing_page_inside_content_pamplet_1_para3">/ per month</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="feedback_section">
+        <div class="landing_page_second_desc_dection_inside_1_feedback">
+            <div class="landing_page_second_desc_dection_inside_2">
+                <div class="landing_page_second_desc_dection_inside_2_1">
+                    <div class="dash_inside"></div>
+                    <p class="message_below_dash">AT THE HEART OF COMMUNITIES</p>
+                    <p class="rating_message_header">People Say</p>
+                    <p class="rating_review_message">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil
+                        corrupti officia alias quod asperiores dignissimos ducimus blanditiis quidem rem unde, assumenda
+                        aspernatur veritatis sunt, eum iusto aperiam eos possimus quas molestiae. Blanditiis possimus
+                        optio neque quo odio aut magni minus pariatur soluta! Minus fugit, sit dolorum quasi ratione
+                        quidem officiis."</p>
+                    <div class="rater_image_profile">
+                        <div class="rater_image_profile_inside">
+                            <img src="/Media_Files/user_rating.jpg" alt="Rating" srcset="">
+                        </div>
+                        <div class="rater_image_profile_inside_2">
+                            <p>KATE PALMER</p>
+                            <p>Kolkata</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="landing_page_second_desc_dection_inside_2_image">
+                <img src="/Media_Files/TERRA-NEST__3_-removebg-preview.png" alt="" srcset="">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="gallery_options">
+        <div class="description_page_landing_page_inside">
+            <div class="description_page_landing_page_inside_part_two">
+                <div class="description_page_landing_page_inside_part_two_upper_bar"></div>
+                <p class="description_page_landing_page_inside_part_two_header">RAISING COMFORT TO THE HIGHEST LEVEL</p>
+                <p class="description_page_landing_page_inside_part_two_para">Rooms & Suites</p>
+            </div>
+            <div class="description_page_landing_page_inside_part_three">
+                <p class="description_page_landing_page_inside_part_three_button"
+                    id="description_page_landing_page_inside_part_three_button_work_submit">VIEW ALL</p>
+            </div>
+        </div>
+        <div class="description_page_landing_page_inside_content">
+            <div class="carousel">
+                <!-- list item -->
+                <div class="list">
+                    <div class="item">
+                        <img src="/Media_Files/Carousel_media/1.jpg">
+                        <div class="content">
+                            <div class="author">LUNDEV</div>
+                            <div class="title">DESIGN SLIDER</div>
+                            <div class="topic">ANIMAL</div>
+                            <div class="des">
+                                <!-- lorem 50 -->
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt
+                                minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda
+                                facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi
+                                reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum
+                                laudantium?
+                            </div>
+                            <div class="buttons">
+                                <button>SEE MORE</button>
+                                <button>SUBSCRIBE</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="/Media_Files/Carousel_media/2.jpg">
+                        <div class="content">
+                            <div class="author">LUNDEV</div>
+                            <div class="title">DESIGN SLIDER</div>
+                            <div class="topic">ANIMAL</div>
+                            <div class="des">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt
+                                minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda
+                                facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi
+                                reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum
+                                laudantium?
+                            </div>
+                            <div class="buttons">
+                                <button>SEE MORE</button>
+                                <button>SUBSCRIBE</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="/Media_Files/Carousel_media/3.jpg">
+                        <div class="content">
+                            <div class="author">LUNDEV</div>
+                            <div class="title">DESIGN SLIDER</div>
+                            <div class="topic">ANIMAL</div>
+                            <div class="des">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt
+                                minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda
+                                facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi
+                                reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum
+                                laudantium?
+                            </div>
+                            <div class="buttons">
+                                <button>SEE MORE</button>
+                                <button>SUBSCRIBE</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="/Media_Files/Carousel_media/4.jpg">
+                        <div class="content">
+                            <div class="author">LUNDEV</div>
+                            <div class="title">DESIGN SLIDER</div>
+                            <div class="topic">ANIMAL</div>
+                            <div class="des">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt
+                                minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda
+                                facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi
+                                reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum
+                                laudantium?
+                            </div>
+                            <div class="buttons">
+                                <button>SEE MORE</button>
+                                <button>SUBSCRIBE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- list thumbnail -->
+                <div class="thumbnail">
+                    <div class="item">
+                        <img src="/Media_Files/Carousel_media/1.jpg">
+                        <div class="content">
+                            <div class="title">
+                                Name Slider
+                            </div>
+                            <div class="description">
+                                Description
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="/Media_Files/Carousel_media/2.jpg">
+                        <div class="content">
+                            <div class="title">
+                                Name Slider
+                            </div>
+                            <div class="description">
+                                Description
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="/Media_Files/Carousel_media/3.jpg">
+                        <div class="content">
+                            <div class="title">
+                                Name Slider
+                            </div>
+                            <div class="description">
+                                Description
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="/Media_Files/Carousel_media/4.jpg">
+                        <div class="content">
+                            <div class="title">
+                                Name Slider
+                            </div>
+                            <div class="description">
+                                Description
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- next prev -->
+
+                <div class="arrows">
+                    <button id="prev"><</button>
+                    <button id="next">></button>
+                </div>
+                <!-- time running -->
+                <div class="time"></div>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -470,15 +761,14 @@
                     </div>
                     <div class="para_section_option_two">
                         <ul class="quick_links_section_options">
-                            <li class="footer_quick_links" id="footer_quick_link_1"><a
-                                    href="/Landing_page/first_page.html" class="footer_option_link">Home</a></li>
+                            <li class="footer_quick_links" id="footer_quick_link_1"><a href="/Landing_page/first_page.html"
+                                    class="footer_option_link">Home</a></li>
                             <li class="footer_quick_links" id="footer_quick_link_2"><a href="#"
                                     class="footer_option_link">About Us</a></li>
-                            <li class="footer_quick_links" id="footer_quick_link_3"><a
-                                    href="/contact_us_page/contact_us_page.html" class="footer_option_link">Contact</a>
-                            </li>
-                            <li class="footer_quick_links" id="footer_quick_link_4"><a
-                                    href="/Explore_page/explore_page.html" class="footer_option_link">Explore</a></li>
+                            <li class="footer_quick_links" id="footer_quick_link_3"><a href="/contact_us_page/contact_us_page.html"
+                                    class="footer_option_link">Contact</a></li>
+                            <li class="footer_quick_links" id="footer_quick_link_4"><a href="/Explore_page/explore_page.html"
+                                    class="footer_option_link">Explore</a></li>
                         </ul>
                     </div>
                 </div>
@@ -507,23 +797,17 @@
                         </p>
                         <div class="newsletter_submission_form_footer">
                             <form id="newsletter_form">
-                                <input type="email" name="news_letter_email" id="news_letter_email"
-                                    placeholder="Enter your Email" required>
-                                <button type="submit" class="footer_button" id="footer_button_id"><img
-                                        src="/Media_Files/search.png" alt="search" srcset=""></button>
+                                <input type="email" name="news_letter_email" id="news_letter_email" placeholder="Enter your Email" required>
+                                <button type="submit" class="footer_button" id="footer_button_id"><img src="/Media_Files/search.png" alt="search" srcset=""></button>
                             </form>
                         </div>
                         <hr class="news_letter_hr">
                         <div class="logos_for_footer">
                             <div class="logos_for_footer_inside">
-                                <a href="#" class="news_letter_social" id="news_letter_footer_socials"><img
-                                        src="/Media_Files/facebook.png" alt="FaceBook"></a>
-                                <a href="#" class="news_letter_social" id="news_letter_footer_socials"><img
-                                        src="/Media_Files/instagram.png" alt="Instagram"></a>
-                                <a href="#" class="news_letter_social" id="news_letter_footer_socials"><img
-                                        src="/Media_Files/Linkedin.png" alt="LinkedIn"></a>
-                                <a href="#" class="news_letter_social" id="news_letter_footer_socials"><img
-                                        src="/Media_Files/Youtube.png" alt="Youtube"></a>
+                                <a href="#" class="news_letter_social" id="news_letter_footer_socials"><img src="/Media_Files/facebook.png" alt="FaceBook"></a>
+                                <a href="#" class="news_letter_social" id="news_letter_footer_socials"><img src="/Media_Files/instagram.png" alt="Instagram"></a>
+                                <a href="#" class="news_letter_social" id="news_letter_footer_socials"><img src="/Media_Files/Linkedin.png" alt="LinkedIn"></a>
+                                <a href="#" class="news_letter_social" id="news_letter_footer_socials"><img src="/Media_Files/Youtube.png" alt="Youtube"></a>
                             </div>
                         </div>
                     </div>
@@ -539,9 +823,12 @@
     </footer>
 
 
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script src="map_work_contact_page.js"></script>
+
+    <script src="/Common_files/endpoint.js"></script>
+    <script src="/Landing_page/first_page_script.js"></script>
     <script src="/Landing_logout_page/cookie_and_logout_check.js"></script>
+    <!-- <script src="/testing/cookies_setter.js"></script> -->
+
 </body>
 
 </html>

@@ -1,6 +1,6 @@
 package Rental.example.Rental_Project_Work.Controller;
 
-import Rental.example.Rental_Project_Work.entity.PGEntity;
+import Rental.example.Rental_Project_Work.Entity.PGEntity;
 import Rental.example.Rental_Project_Work.service.PGService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;

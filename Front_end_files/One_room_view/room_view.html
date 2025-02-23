@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
     <link rel="stylesheet" href="/Explore_page/explore_page.css">
-    <link rel="stylesheet" href="../Landing_page/first_page_styling.css">
-    
+    <link rel="stylesheet" href="/Landing_page/first_page_styling.css">
+    <link rel="stylesheet" href="/One_room_view/room_view.css">
     <link rel="shortcut icon" href="/Media_Files/TERRA-NEST (3).png" type="image/x-icon">
 
 
@@ -33,8 +32,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap"
         rel="stylesheet">
+
+
+
     <title>TerraNest | PG Renting Website</title>
 </head>
+
 <body>
     <nav class="navbar">
         <div class="logo">
@@ -66,121 +69,151 @@
             <a href="#"><img src="/Media_Files/Linkedin.png" alt="LinkedIn Logo" srcset=""></a>
         </div>
     </nav>
-
-
-    <section class="explore_page_background"> 
-    </section>
-
-
-    <section class="filter_options_explore_page">
-        <div class="options_of_filter" id="filtering_options_1">
-            <div class="menu-container">
-                <button class="menu-toggle-btn">PG Type <span class="toggle-arrow">&#9662;</span></button>
-                <ul class="menu-options">
-                    <li class="menu-item" data-value="Single Bed">Single Bed</li>
-                    <li class="menu-item" data-value="Twin Bed">Twin Bed</li>
-                    <li class="menu-item" data-value="Three Sharing">Three Sharing</li>
-                    <li class="menu-item" data-value="Dormitory Sharing">Dormitory Sharing</li>
-                </ul>
-            </div>
-        </div>
-        <div class="options_of_filter" id="filtering_options_1">
-            <div class="menu-container">
-                <button class="menu-toggle-btn">Gender Type <span class="toggle-arrow">&#9662;</span></button>
-                <ul class="menu-options">
-                    <li class="menu-item" data-value="Male">Male</li>
-                    <li class="menu-item" data-value="Female">Female</li>
-                    <li class="menu-item" data-value="Co-Living">Co-Living</li>
-                </ul>
-            </div>
-        </div>
-        <div class="options_of_filter" id="filtering_options_2">
-            <div class="menu-container">
-                <button class="menu-toggle-btn">Price Range <span class="toggle-arrow">&#9662;</span></button>
-                <ul class="menu-options">
-                    <li class="menu-item" data-value="0-5000">Rs.0 - Rs.5000</li>
-                    <li class="menu-item" data-value="5000-10000">Rs.5000 - Rs.10000</li>
-                    <li class="menu-item" data-value="10000-15000">Rs.10000 - Rs.15000</li>
-                    <li class="menu-item" data-value="Above 15000">Above Rs.15000</li>
-                </ul>
-            </div>
-        </div>
-        <div class="options_of_filter" id="filtering_options_3">
-            <div class="menu-container">
-                <button class="menu-toggle-btn">Rating <span class="toggle-arrow">&#9662;</span></button>
-                <ul class="menu-options">
-                    <li class="menu-item" data-value="0-1">0-1</li>
-                    <li class="menu-item" data-value="1-2">1-2</li>
-                    <li class="menu-item" data-value="2-3">2-3</li>
-                    <li class="menu-item" data-value="3-4">3-4</li>
-                    <li class="menu-item" data-value="4-5">4-5</li>
-                </ul>
-            </div>
-        </div>
-        <div class="options_of_filter" id="filtering_options_4">
-            <div class="menu-container">
-                <button class="menu-toggle-btn">Nearby Preference <span class="toggle-arrow">&#9662;</span></button>
-                <ul class="menu-options">
-                    <li class="menu-item" data-value="Hospital">Hospital</li>
-                    <li class="menu-item" data-value="Park">Park</li>
-                    <li class="menu-item" data-value="Power Backup">Power Backup</li>
-                    <li class="menu-item" data-value="Shopping Mall">Shopping Mall</li>
-                    <li class="menu-item" data-value="Garage">Garage</li>
-                    <li class="menu-item" data-value="Train/Metro Stations">Train/Metro Stations</li>
-                </ul>
-            </div>
-        </div>
-        <div class="options_of_filter" id="filtering_options_5">
-            <div class="menu-container">
-                <button class="menu-toggle-btn">City <span class="toggle-arrow">&#9662;</span></button>
-                <ul class="menu-options">
-                    <li class="menu-item" data-value="Mumbai">Mumbai</li>
-                    <li class="menu-item" data-value="Delhi">Delhi</li>
-                    <li class="menu-item" data-value="Bangalore">Bangalore</li>
-                    <li class="menu-item" data-value="Hyderabad">Hyderabad</li>
-                    <li class="menu-item" data-value="Chennai">Chennai</li>
-                    <li class="menu-item" data-value="Kolkata">Kolkata</li>
-                    <li class="menu-item" data-value="Pune">Pune</li>
-                    <li class="menu-item" data-value="Ahmedabad">Ahmedabad</li>
-                    <li class="menu-item" data-value="Jaipur">Jaipur</li>
-                    <li class="menu-item" data-value="Lucknow">Lucknow</li>
-                    <li class="menu-item" data-value="Surat">Surat</li>
-                    <li class="menu-item" data-value="Kanpur">Kanpur</li>
-                    <li class="menu-item" data-value="Nagpur">Nagpur</li>
-                    <li class="menu-item" data-value="Visakhapatnam">Visakhapatnam</li>
-                    <li class="menu-item" data-value="Bhopal">Bhopal</li>
-                    <li class="menu-item" data-value="Patna">Patna</li>
-                    <li class="menu-item" data-value="Thiruvananthapuram">Thiruvananthapuram</li>
-                    <li class="menu-item" data-value="Indore">Indore</li>
-                    <li class="menu-item" data-value="Vadodara">Vadodara</li>
-                    <li class="menu-item" data-value="Coimbatore">Coimbatore</li>
-                    <li class="menu-item" data-value="Mysore">Mysore</li>
-                    <li class="menu-item" data-value="Gurgaon">Gurgaon</li>
-                    <li class="menu-item" data-value="Noida">Noida</li>
-                    <li class="menu-item" data-value="Chandigarh">Chandigarh</li>
-                </ul>
-            </div>
-        </div>
-        <!-- Submit Button -->
-        <button id="submit-button" class="submit-btn">Refresh</button>
-    </section>
-
-
-
-    <section class="search_box_for_location_search">
-        <form class="search_box_form">
-            <input type="search" name="search_box" id="search_box" class="searching_box" placeholder="Enter your requirements..." required>
-            <input type="button" value="Search" class="search_box_submit" id="search_box_submit_class" onsubmit="search_work()">
-        </form>
-    </section>
     
-
     
-    <section class="pamphlet-section" id="pamphletSection">
-            <!-- Items will be dynamically injected here -->
+    <section class="one_product_discuss" id="carousel_target">
+        <div class="carousel">
+            <!-- list item -->
+            <div class="list">
+                <div class="item">
+                    <img src="/Media_Files/Carousel_media/1.jpg">
+                    <div class="content">
+                        <div class="author">LUNDEV</div>
+                        <div class="title">DESIGN SLIDER</div>
+                        <div class="topic">ANIMAL</div>
+                        <div class="des">
+                            <!-- lorem 50 -->
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt
+                            minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda
+                            facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi
+                            reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum
+                            laudantium?
+                        </div>
+                        <div class="buttons">
+                            <button>SEE MORE</button>
+                            <button>SUBSCRIBE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/Media_Files/Carousel_media/2.jpg">
+                    <div class="content">
+                        <div class="author">LUNDEV</div>
+                        <div class="title">DESIGN SLIDER</div>
+                        <div class="topic">ANIMAL</div>
+                        <div class="des">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt
+                            minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda
+                            facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi
+                            reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum
+                            laudantium?
+                        </div>
+                        <div class="buttons">
+                            <button>SEE MORE</button>
+                            <button>SUBSCRIBE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/Media_Files/Carousel_media/3.jpg">
+                    <div class="content">
+                        <div class="author">LUNDEV</div>
+                        <div class="title">DESIGN SLIDER</div>
+                        <div class="topic">ANIMAL</div>
+                        <div class="des">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt
+                            minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda
+                            facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi
+                            reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum
+                            laudantium?
+                        </div>
+                        <div class="buttons">
+                            <button>SEE MORE</button>
+                            <button>SUBSCRIBE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/Media_Files/Carousel_media/4.jpg">
+                    <div class="content">
+                        <div class="author">LUNDEV</div>
+                        <div class="title">DESIGN SLIDER</div>
+                        <div class="topic">ANIMAL</div>
+                        <div class="des">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt
+                            minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda
+                            facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi
+                            reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum
+                            laudantium?
+                        </div>
+                        <div class="buttons">
+                            <button>SEE MORE</button>
+                            <button>SUBSCRIBE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- list thumbnail -->
+            <div class="thumbnail">
+                <div class="item">
+                    <img src="/Media_Files/Carousel_media/1.jpg">
+                    <div class="content">
+                        <div class="title">
+                            Name Slider
+                        </div>
+                        <div class="description">
+                            Description
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/Media_Files/Carousel_media/2.jpg">
+                    <div class="content">
+                        <div class="title">
+                            Name Slider
+                        </div>
+                        <div class="description">
+                            Description
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/Media_Files/Carousel_media/3.jpg">
+                    <div class="content">
+                        <div class="title">
+                            Name Slider
+                        </div>
+                        <div class="description">
+                            Description
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/Media_Files/Carousel_media/4.jpg">
+                    <div class="content">
+                        <div class="title">
+                            Name Slider
+                        </div>
+                        <div class="description">
+                            Description
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- next prev -->
+
+            <div class="arrows">
+                <button id="prev"><</button>
+                <button id="next">></button>
+            </div>
+            <!-- time running -->
+            <div class="time"></div>
+        </div>
     </section>
 
 
+
+    
     <footer class="footer_part">
         <div class="footer_inside_one">
             <div class="footer_item_1">
@@ -265,11 +298,11 @@
     </footer>
 
 
+    <!-- <script src="/One_room_view/room_view.js"></script> -->
+    <!-- <script src="/Landing_logout_page/cookie_and_logout_check.js"></script> -->
+    <script src="/testing/cookies_setter.js"></script>
+    <script src="/One_room_view/carousel_work.js"></script>
 
-
-    
-    <script src="explore_page.js"></script>
-    <script src="/Explore_page/items.js"></script>
-    <script src="/Landing_logout_page/cookie_and_logout_check.js"></script>
 </body>
+
 </html>

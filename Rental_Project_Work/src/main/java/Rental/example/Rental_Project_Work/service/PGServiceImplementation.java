@@ -1,7 +1,7 @@
 package Rental.example.Rental_Project_Work.service;
 
-import Rental.example.Rental_Project_Work.entity.PGEntity;
-import Rental.example.Rental_Project_Work.repository.PGRepository;
+import Rental.example.Rental_Project_Work.Entity.PGEntity;
+import Rental.example.Rental_Project_Work.Repository.PGRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

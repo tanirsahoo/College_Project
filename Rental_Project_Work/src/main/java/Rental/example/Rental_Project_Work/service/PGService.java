@@ -1,6 +1,6 @@
 package Rental.example.Rental_Project_Work.service;
 
-import Rental.example.Rental_Project_Work.entity.PGEntity;
+import Rental.example.Rental_Project_Work.Entity.PGEntity;
 
 import java.util.List;
 

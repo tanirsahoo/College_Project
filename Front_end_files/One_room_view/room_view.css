@@ -1,0 +1,151 @@
+.one_product_discuss{
+    margin-top: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.carousel{
+       width: 90%; 
+       border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    background-color:#00000061 ;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    animation: item1 1s ease-in-out forwards;
+}
+
+.logo img {
+    width: 100px;
+    filter: invert(1);
+    cursor: pointer;
+}
+
+.logo img:hover {
+    width: 100px;
+    filter: invert(0.7);
+    cursor: pointer;
+}
+
+.options {
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    border-right: 2px solid rgba(255, 255, 255, 0.258);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    overflow: hidden;
+    opacity: 0;
+    /* Initially hidden */
+    max-height: 0;
+    /* Collapsed by default */
+    transform: translateY(10px);
+
+    /* Slightly down */
+    transition: max-height 0.4s ease, opacity 0.4s ease, transform 0.4s ease;
+    /* Smooth animation */
+}
+
+/* Dropdown Menu List Items */
+.dropdown-menu li {
+    padding: 10px;
+}
+
+.dropdown-menu li a {
+    color: #fff;
+    font-size: 16px;
+    text-align: left;
+}
+
+/* Social Media Icons Styling */
+.social-icons {
+    width: 20rem;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 18px;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.social-icons a img {
+    height: 1.5rem;
+    transition: 0.2s linear;
+    filter: invert(0);
+}
+
+.social-icons a img:hover {
+    filter: invert(1)
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    max-height: 300px;
+    /* Expand */
+    transform: translateY(0);
+    /* Move up */
+}
+
+.nav-links li a:hover {
+    color: #f39c12;
+    /* Gold hover effect */
+}
+
+@keyframes item1 {
+    0% {
+        top: -100px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
