@@ -33,4 +33,6 @@ public class Bed {
     private String user_id ;
 
     private String type ; //Value will be Single Bed , Dual Bed, Triple Bed or Dormatory
+
+    private String description ;
 }

@@ -21,8 +21,9 @@ public class MapFeature {
     private int feature_id ;
     @NotBlank(message = "Please enter feature type.")
     private String feature_type ;
-    @NotBlank(message = "Please enter the images.")
+    @NotBlank(message = "Please enter the PG ID.")
+    private String pg_id;
     private String images ;
-    @NotBlank(message = "Please enter the videos.")
     private String videos ;
+    private String pg_rules ;
 }

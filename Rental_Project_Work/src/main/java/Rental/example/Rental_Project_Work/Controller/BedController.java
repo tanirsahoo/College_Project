@@ -1,7 +1,7 @@
 package Rental.example.Rental_Project_Work.Controller;
 
 import Rental.example.Rental_Project_Work.Entity.Bed;
-import Rental.example.Rental_Project_Work.service.BedService;
+import Rental.example.Rental_Project_Work.Service.BedService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

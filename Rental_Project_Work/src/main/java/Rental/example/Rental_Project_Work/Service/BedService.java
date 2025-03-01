@@ -1,4 +1,4 @@
-package Rental.example.Rental_Project_Work.service;
+package Rental.example.Rental_Project_Work.Service;
 
 import Rental.example.Rental_Project_Work.Entity.Bed;
 import Rental.example.Rental_Project_Work.Repository.BedRepository;
