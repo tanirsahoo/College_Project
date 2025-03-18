@@ -1074,7 +1074,7 @@
     margin: 4rem 1rem 2rem 1rem ;
 }
 .image_work_description_page_landing_page_inside_content_pamplet_1{
-    background-image: url('/Media_Files/explore_option_1.jpg');
+    background-image: url('/Media_Files/explore_option_4.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1082,7 +1082,7 @@
     height: 25rem;
 }
 .image_work_description_page_landing_page_inside_content_pamplet_2{
-    background-image: url('/Media_Files/explore_option_2.jpg');
+    background-image: url('/Media_Files/explore_option_5.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1090,7 +1090,7 @@
     height: 25rem;
 }
 .image_work_description_page_landing_page_inside_content_pamplet_3{
-    background-image: url('/Media_Files/explore_option_3.jpg');
+    background-image: url('/Media_Files/explore_option_6.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1224,13 +1224,12 @@
     margin: 1rem 0rem 0rem 0rem;
 }
 .rater_image_profile_inside{
-    width: 3rem;
-    height: 3rem;
+    width: 4rem;
+    height: 4rem;
     overflow: hidden;
     display:flex;
     align-items: center;
-    /* justify-content: center; */
-    border-radius: 50%;
+    justify-content: center;
 }
 .rater_image_profile_inside img{
     height: 3rem;
