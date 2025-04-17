@@ -33,3 +33,5 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+// deleteCookie("user_session") ;
