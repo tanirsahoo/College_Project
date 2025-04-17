@@ -34,5 +34,5 @@ public class Bed {
 
     private String type ; //Value will be Single Bed , Dual Bed, Triple Bed or Dormatory
 
-    private String description ;
+    private String facilities_for_bed ;
 }

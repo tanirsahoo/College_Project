@@ -8,6 +8,14 @@ function getCookie(name) {
     return null;
 }
 
+// Function to set a cookie
+// function setCookie(name, value, daysToExpire = 7, path = "/") {
+//     const date = new Date();
+//     date.setTime(date.getTime() + (daysToExpire * 24 * 60 * 60 * 1000));
+//     const expires = "expires=" + date.toUTCString();
+//     document.cookie = `${name}=${value}; ${expires}; path=${path}`;
+// }
+
 // Function to delete a cookie (expire it)
 function deleteCookie(name) {
     document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/`;
