@@ -1,9 +1,6 @@
 package Rental.example.Rental_Project_Work.Entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
@@ -38,4 +35,7 @@ public class PGEntity {
 
     @NotNull(message = "Please enter the pincode")
     private String pincode;
+
+    @Column(length = 10000)
+    private String PGRules ;
 }

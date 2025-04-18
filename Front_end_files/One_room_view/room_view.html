@@ -322,14 +322,14 @@
 
 
         <div class="one_product_description_section">
-            <sidebar class="one_product_sidebar_left">
+            <!-- <sidebar class="one_product_sidebar_left">
                 <div class="side_bar_left_first_child">
                     <div class="side_left_people">
                         <div class="side_left_people_image">
                             <img src="/Media_Files/One Item Pics/individual.png" alt="Head Count" srcset="">
                         </div>
                         <div class="side_bar_left_number_of_beds">
-                            <p>6 Total People</p>
+                            <p>Boys</p>
                         </div>
                     </div>
                     <div class="side_left_people">
@@ -384,19 +384,80 @@
                         </ul>
                     </div>
                 </div>
+            </sidebar> -->
+
+            <sidebar class="one_product_sidebar_left">
+                <div class="side_bar_left_first_child">
+                    <div class="side_left_people">
+                        <div class="side_left_people_image">
+                            <img src="/Media_Files/One Item Pics/individual.png" alt="Head Count">
+                        </div>
+                        <div class="side_bar_left_number_of_beds" id="pgGender">
+                            <p>Boys</p>
+                        </div>
+                    </div>
+                    <div class="side_left_people">
+                        <div class="side_left_people_image">
+                            <img src="/Media_Files/One Item Pics/Bed.png" alt="Bed Type">
+                        </div>
+                        <div class="side_bar_left_number_of_beds" id="bedType">
+                            <p>Triple Sharing</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="side_bar_left_second_child">
+                    <p id="bedDescription">
+                        Loading bed description...
+                    </p>
+                </div>
+
+                <div class="side_bar_left_third_child">
+                    <div class="side_bar_third_facilities">
+                        <p>Facilities</p>
+                    </div>
+                    <div class="side_bar_third_list">
+                        <ul id="bedFacilities">
+                            <!-- Populated by JS -->
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="side_bar_left_fourth_child">
+                    <div class="side_bar_fourth_facilities">
+                        <p>Paying Guest Rules</p>
+                    </div>
+                    <div class="side_bar_fourth_list">
+                        <ul id="pgRules">
+                            <!-- Populated by JS -->
+                        </ul>
+                    </div>
+                </div>
             </sidebar>
+
+            <!-- For cost and strike -->
+            <!-- <p>Current Price: ₹<span id="currentPrice"></span></p>
+            <p>Original Price: ₹<span id="strikedPrice"></span></p> -->
+
+            <!-- Carousel container -->
+            <!-- <div id="carouselTrack" class="carousel-track"></div>
+            <button id="prev">Previous</button>
+            <button id="next">Next</button> -->
+
+
+
             <sidebar class="one_product_sidebar_right">
                 <div class="all_side_right_contents">
                     <div class="sidebar_right_child">
                         <div class="sidebar_right_first_child">
                             <p class="right_sidebar_1st_child">
                                 <span>₹</span><span id="currentPrice">4999</span>
-                              </p>
-                              <p class="right_sidebar_3rd_child">
+                            </p>
+                            <p class="right_sidebar_3rd_child">
                                 <strike>₹<span id="strikedPrice">8999</span></strike>
-                              </p>
-                              <p class="right_sidebar_2nd_child"><span>/</span><span>Month</span></p>
-                              
+                            </p>
+                            <p class="right_sidebar_2nd_child"><span>/</span><span>Month</span></p>
+
                         </div>
                         <div class="sidebar_right_second_child">
                             <button type="submit" class="sidebar_right_submit_button" id="right_sidebar_submit">Book
