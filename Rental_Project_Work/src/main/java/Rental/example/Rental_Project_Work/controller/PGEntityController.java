@@ -10,7 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("PGSearch")
-public class PGEntityController {
+public class PGEntityController {   
     @Autowired
     private PGService pgService;
     @PostMapping("/pg")  // http://127.0.0.1:9000/PGSearch/pg

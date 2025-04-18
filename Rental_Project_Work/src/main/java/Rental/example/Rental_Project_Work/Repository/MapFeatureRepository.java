@@ -8,5 +8,5 @@ import java.util.List;
 
 @Repository
 public interface MapFeatureRepository extends JpaRepository<MapFeature, Integer> {
-    List<MapFeature> findByPg_id(String pg_id);
+    List<MapFeature> findByPgId(String pgId);
 }

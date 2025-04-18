@@ -23,7 +23,7 @@ public class MapFeatureService {
     }
 
     public List<MapFeature> getFeaturesByPgId(String pgId) {
-        return mapFeatureRepository.findByPg_id(pgId);
+        return mapFeatureRepository.findByPgId(pgId);
     }
 
     public MapFeature saveFeature(MapFeature mapFeature) {

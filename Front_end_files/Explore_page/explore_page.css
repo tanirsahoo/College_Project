@@ -323,6 +323,9 @@
   margin: 10px 0;
   color: #333;
 }
+.custom-pamphlet-type{
+  font-size: 16px;
+}
 
 .custom-pamphlet-description {
   font-size: 14px;
