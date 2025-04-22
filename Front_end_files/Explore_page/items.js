@@ -79,6 +79,8 @@ function displayData(items) {
             <div class="custom-pamphlet-content">
                 <h3 class="custom-pamphlet-title">${PGDetails.pgname}</h3>
                 <h2 class="custom-pamphlet-title custom-pamphlet-type">${item.type}</h2>
+                <h2 class="custom-pamphlet-title custom-pamphlet-price"><spam>₹${item.cost}</spam>&nbsp;<strike>₹${item.cost * 1.8}</strike></h2>
+                <p clas="custom-pamphlet-description location-share"><spam class="one">${PGDetails.state},<spam>&nbsp;<spam class="two">${PGDetails.pincode}</spam></p>
                 <p class="custom-pamphlet-description">${truncatedDescription}</p>
                 <a href="${one_item_page}?id=${item.bed_id}" class="custom-pamphlet-btn">Learn More</a>
             </div>

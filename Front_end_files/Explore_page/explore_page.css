@@ -326,6 +326,14 @@
 .custom-pamphlet-type{
   font-size: 16px;
 }
+.custom-pamphlet-price spam{
+  font-size: 16px;
+  color: green;
+}
+.custom-pamphlet-price strike{
+  font-size: 10px;
+  color: rgb(247, 21, 4);
+}
 
 .custom-pamphlet-description {
   font-size: 14px;

@@ -17,7 +17,7 @@ public class Bed {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int Bed_id ;
 
-    private String PG_id ;
+    private String PG_id ; //Foreign Key
 
     private String video ;
 
