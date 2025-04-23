@@ -1,194 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Infinite Autoplay Carousel</title>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stripe Payment Test</title>
+  <script src="https://js.stripe.com/v3/"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+      background: #f9f9f9;
+    }
 
-        body {
-            margin: 0;
-            padding: 0;
-            background: #111;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
+    #payment-form {
+      max-width: 400px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
 
-        .carousel-wrapper {
-            position: relative;
-            width: 100%;
-            max-width: 75vw;
-            min-width: 45rem;
-            /* Set minimum width */
-        }
+    #card-element {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-bottom: 20px;
+      background-color: #fff;
+    }
 
-        .carousel-container {
-            width: 100%;
-            aspect-ratio: 5 / 3;
-            /* 500/300 = 5:3 ratio to keep consistent height */
-            overflow: hidden;
-        }
+    button {
+      background-color: #5469d4;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
 
-        .carousel-track {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-        }
-
-        .carousel-slide {
-            flex: 0 0 100%;
-            height: auto;
-        }
-
-        .carousel-slide img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-
-        .arrow {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            font-size: 2rem;
-            background: rgba(0, 0, 0, 0);
-            color: white;
-            border: none;
-            padding: 12px 15px;
-            cursor: pointer;
-            z-index: 10;
-            border-radius: 50%;
-            transition: background 0.3s;
-        }
-
-        .arrow:hover {
-            color: rgb(142, 140, 140);
-        }
-
-        .arrow.left {
-            left: -50px;
-        }
-
-        .arrow.right {
-            right: -50px;
-        }
-
-        @media (max-width: 768px) {
-
-            .arrow.left,
-            .arrow.right {
-                left: 10px;
-                right: 10px;
-                font-size: 1.5rem;
-            }
-        }
-    </style>
+    #card-errors {
+      color: red;
+      margin-top: 12px;
+    }
+  </style>
 </head>
-
 <body>
 
-    <div class="carousel-wrapper">
-        <div class="carousel-container">
-            <div class="carousel-track" id="carouselTrack">
-                <!-- Clone last image at start for infinite loop -->
-                <div class="carousel-slide"><img src="https://picsum.photos/id/1043/500/300" alt="5" /></div>
-                <div class="carousel-slide"><img src="https://picsum.photos/id/1015/500/300" alt="1" /></div>
-                <div class="carousel-slide"><img src="https://picsum.photos/id/1025/500/300" alt="2" /></div>
-                <div class="carousel-slide"><img src="https://picsum.photos/id/1035/500/300" alt="3" /></div>
-                <div class="carousel-slide"><img src="https://picsum.photos/id/1045/500/300" alt="4" /></div>
-                <!-- Clone first image at end for infinite loop -->
-                <div class="carousel-slide"><img src="https://picsum.photos/id/1015/500/300" alt="1" /></div>
-            </div>
-        </div>
-        <button class="arrow left" id="prev">&#10094;</button>
-        <button class="arrow right" id="next">&#10095;</button>
-    </div>
+  <h2 style="text-align:center;">Stripe Payment Test</h2>
 
-    <script>
-        const track = document.getElementById("carouselTrack");
-        const slides = document.querySelectorAll(".carousel-slide");
-        const prevBtn = document.getElementById("prev");
-        const nextBtn = document.getElementById("next");
+  <form id="payment-form">
+    <div id="card-element"><!-- Stripe card element will be inserted here --></div>
+    <div id="card-errors" role="alert"></div>
+    <button type="submit">Pay ₹100</button>
+  </form>
 
-        let index = 1;
-        // const slideWidth = slides[0].clientWidth;
+  <script>
+    document.addEventListener("DOMContentLoaded", async function () {
+      const stripe = Stripe("pk_test_51RGv3mFMiJyBjLUB8DJicO6iHcOW6eYRTqeK2l8Gq2S6IPqghT1CU1r3OCi3l2HPNdXqyX6Agmr7hqbvh8smC2hu00D0bGTKVh");
 
-        function getSlideWidth() {
-            return slides[0].clientWidth;
-        }
-        const slideWidth = getSlideWidth;
+      // Replace with your actual backend endpoint
+      const paymentEndpoint = "http://localhost:9000/api/payment/create-payment-intent/502"; // Adjust as needed
 
-        let autoSlideInterval;
+      const response = await fetch(paymentEndpoint, {
+        method: 'POST'
+      });
 
-        function updateSlide() {
-            track.style.transform = `translateX(-${getSlideWidth() * index}px)`;
-        }
+      const data = await response.json();
+      const clientSecret = data.clientSecret;
 
-        function startAutoSlide() {
-            autoSlideInterval = setInterval(() => {
-                moveToNext();
-            }, 3000);
-        }
+      const elements = stripe.elements();
+      const card = elements.create("card");
+      card.mount("#card-element");
 
-        function stopAutoSlide() {
-            clearInterval(autoSlideInterval);
-        }
+      const form = document.getElementById("payment-form");
+      form.addEventListener("submit", async function (event) {
+        event.preventDefault();
 
-        function moveToNext() {
-            if (index >= slides.length - 1) return;
-            index++;
-            track.style.transition = "transform 0.5s ease-in-out";
-            updateSlide();
-        }
-
-        function moveToPrev() {
-            if (index <= 0) return;
-            index--;
-            track.style.transition = "transform 0.5s ease-in-out";
-            updateSlide();
-        }
-
-        nextBtn.addEventListener("click", () => {
-            stopAutoSlide();
-            moveToNext();
-            startAutoSlide();
+        const { error, paymentIntent } = await stripe.confirmCardPayment(clientSecret, {
+          payment_method: {
+            card: card
+          }
         });
 
-        prevBtn.addEventListener("click", () => {
-            stopAutoSlide();
-            moveToPrev();
-            startAutoSlide();
-        });
-
-        track.addEventListener("transitionend", () => {
-            const currentImg = slides[index].children[0];
-            if (currentImg.alt === "1" && index === slides.length - 1) {
-                track.style.transition = "none";
-                index = 1;
-                updateSlide();
-            } else if (currentImg.alt === "5") {
-                track.style.transition = "none";
-                index = slides.length - 2;
-                updateSlide();
-            }
-        });
-
-        window.addEventListener('resize', () => {
-            const newSlideWidth = slides[0].clientWidth;
-            track.style.transition = "none";
-            track.style.transform = `translateX(-${newSlideWidth * index}px)`;
-        });
-
-        // Initialize
-        updateSlide();
-        startAutoSlide();
-    </script>
-
+        if (error) {
+          document.getElementById("card-errors").textContent = error.message;
+        } else {
+          alert("✅ Payment successful!");
+        }
+      });
+    });
+  </script>
 </body>
-
 </html>

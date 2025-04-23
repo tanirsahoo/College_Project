@@ -192,13 +192,13 @@ let thumbnailBorderDom = document.querySelector('.carousel .thumbnail');
 let thumbnailItemsDom = thumbnailBorderDom.querySelectorAll('.item');
 let timeDom = document.querySelector('.carousel .time');
 
-console.log(nextDom) ;
-console.log(prevDom) ;
-console.log(carouselDom) ;
-console.log(SliderDom) ;
-console.log(thumbnailBorderDom) ;
-console.log(thumbnailItemsDom) ;
-console.log(timeDom) ;
+// console.log(nextDom) ;
+// console.log(prevDom) ;
+// console.log(carouselDom) ;
+// console.log(SliderDom) ;
+// console.log(thumbnailBorderDom) ;
+// console.log(thumbnailItemsDom) ;
+// console.log(timeDom) ;
 
 
 thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/Explore_page/explore_page.css">
     <link rel="stylesheet" href="/Landing_page/first_page_styling.css">
     <link rel="stylesheet" href="/One_room_view/room_view.css">
+    <link rel="stylesheet" href="/One_room_view/payment_work.css">
     <link rel="shortcut icon" href="/Media_Files/TERRA-NEST (3).png" type="image/x-icon">
 
 
@@ -322,70 +323,6 @@
 
 
         <div class="one_product_description_section">
-            <!-- <sidebar class="one_product_sidebar_left">
-                <div class="side_bar_left_first_child">
-                    <div class="side_left_people">
-                        <div class="side_left_people_image">
-                            <img src="/Media_Files/One Item Pics/individual.png" alt="Head Count" srcset="">
-                        </div>
-                        <div class="side_bar_left_number_of_beds">
-                            <p>Boys</p>
-                        </div>
-                    </div>
-                    <div class="side_left_people">
-                        <div class="side_left_people_image">
-                            <img src="/Media_Files/One Item Pics/Bed.png" alt="Head Count" srcset="">
-                        </div>
-                        <div class="side_bar_left_number_of_beds">
-                            <p>Triple Sharing</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="side_bar_left_second_child">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa inventore porro dicta velit vitae
-                        illum non voluptatibus doloremque, veniam obcaecati debitis accusantium et expedita, quaerat
-                        magni voluptatum totam magnam corporis adipisci voluptates delectus quisquam. Laudantium esse
-                        accusamus dignissimos earum ab, unde nostrum adipisci nobis similique iste ea nam voluptatum
-                        mollitia officia commodi quaerat, consectetur explicabo quibusdam? Blanditiis dolore deserunt
-                        aut velit assumenda accusantium praesentium magni, rem voluptatibus sapiente ducimus libero,
-                        cumque corrupti facere modi sed, inventore molestias aliquid! Similique, impedit sunt! Sit quae
-                        voluptatem aliquam inventore iure repudiandae, deserunt nostrum vitae ab quaerat cum? Quam
-                        aliquam facere tempora magni.</p>
-                </div>
-                <div class="side_bar_left_third_child">
-                    <div class="side_bar_third_facilities">
-                        <p>Facilities</p>
-                    </div>
-                    <div class="side_bar_third_list">
-                        <ul>
-                            <li>Large Bed</li>
-                            <li>Dry Cleaning</li>
-                            <li>Air Conditioning</li>
-                            <li>Shared Kitchen</li>
-                            <li>High Speed Wifi</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="side_bar_left_fourth_child">
-                    <div class="side_bar_fourth_facilities">
-                        <p>Paying Guest Rules</p>
-                    </div>
-                    <div class="side_bar_fourth_list">
-                        <ul>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, aspernatur.</li>
-                            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci quod quis deserunt
-                                odio quam tempora.</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto tempore totam deleniti.
-                            </li>
-                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque quia illo, amet
-                                architecto ea fugit vitae rem!</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quas sunt nihil hic vitae
-                                incidunt numquam magni quisquam. Eos, temporibus!</li>
-                        </ul>
-                    </div>
-                </div>
-            </sidebar> -->
-
             <sidebar class="one_product_sidebar_left">
                 <div class="side_bar_left_first_child">
                     <div class="side_left_people">
@@ -487,6 +424,53 @@
     </section>
 
 
+    <section class="payment-work" id="payment-area-to-accept-payments">
+        <div class="payment-section-inside">
+            <form id="payment-form">
+                <div class="payment_details_display">PAYMENT DETAILS</div>
+                <hr class="payment_details_line">
+    
+                <div class="input-group">
+                    <p class="payment-label" for="input-name">Enter your Name</p>
+                    <input type="text" id="input-name" class="payment-input" placeholder="Ex: John Doe" required>
+                </div>
+    
+                <div class="input-group">
+                    <p class="payment-label" for="input-email">Enter your Email Address</p>
+                    <input type="email" id="input-email" class="payment-input" placeholder="johndoe1990@gmail.com" required>
+                </div>
+    
+                <div class="input-group">
+                    <p class="payment-label" for="input-contact">Enter your Contact Number</p>
+                    <input type="tel" id="input-contact" class="payment-input" placeholder="+91 9876543210" required>
+                </div>
+    
+                <div class="input-group">
+                    <p class="payment-label" for="input-city">Enter your City</p>
+                    <input type="text" id="input-city" class="payment-input" placeholder="Washington DC" required>
+                </div>
+    
+                <div class="input-group">
+                    <p class="payment-label" for="input-country">Enter your Country</p>
+                    <input type="text" id="input-country" class="payment-input" placeholder="United States of America" required>
+                </div>
+    
+                <div class="input-group">
+                    <p class="payment-label" for="input-state">Enter your State</p>
+                    <input type="text" id="input-state" class="payment-input" placeholder="Washington" required>
+                </div>
+    
+                <div class="input-group">
+                    <div id="card-element"><!-- Stripe injects Card UI here --></div>
+                    <div id="card-errors" role="alert"></div>
+                </div>
+    
+                <button type="submit" class="payment_button_style">Pay Now</button>
+            </form>
+        </div>
+    </section>
+    
+
 
 
     <footer class="footer_part">
@@ -583,6 +567,8 @@
 
     <script src="/Common_files/endpoint.js"></script>
     <script src="/One_room_view/room_view.js"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="/One_room_view/payment_activity.js"></script>
     <!-- <script src="/Landing_logout_page/cookie_and_logout_check.js"></script> -->
     <!-- <script src="/testing/cookies_setter.js"></script>
     <script src="/One_room_view/carousel_work.js"></script> -->
