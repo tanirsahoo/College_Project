@@ -14,4 +14,5 @@ public interface BedRepository extends JpaRepository<Bed, Integer> {
     @Query("SELECT new Rental.example.Rental_Project_Work.DTO.BedWithPGDTO(b, p) " +
             "FROM Bed b JOIN b.pg p")
     List<BedWithPGDTO> fetchAllBedsWithPG();
+    
 }
