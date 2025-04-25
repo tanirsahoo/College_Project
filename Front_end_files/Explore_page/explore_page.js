@@ -40,7 +40,8 @@ document.addEventListener('click', () => {
 // Handle Submit Button Click
 submitButton.addEventListener('click', () => {
   console.log("Selected Values:", selectedValues);
-  alert(`Selected Values:\n${JSON.stringify(selectedValues, null, 2)}`);
+  // alert(`Selected Values:\n${JSON.stringify(selectedValues, null, 2)}`);
+  filter_implementation();
 });
 
 

@@ -124,7 +124,7 @@ function handleSignupFormSubmit(event) {
             return response.json();
         })
         .then(data => {
-            alert('Signup successful!');
+            alert('Please verify your Email');
         })
         .catch((error) => {
             // console.error('Signup Error:', error);
@@ -157,13 +157,25 @@ function handleLoginFormSubmit(event) {
         return response.json();
     })
     .then(data => {
+        // if (data === true) {
+        //     console.log('Login Success:', data);
+        //     alert('Login successful!');
+        //     setCookie("Email-Address", email , 30); // Set cookie for 30 days
+        //     window.location.href = index_page ;
+        // } else {
+        //     console.log('Login Failed:', data);
+        //     alert('Invalid email or password. Please try again.');
+        // }
+
         if (data === true) {
             console.log('Login Success:', data);
             alert('Login successful!');
-            // Optionally, redirect to a different page or perform additional actions
-        } else {
-            console.log('Login Failed:', data);
-            alert('Invalid email or password. Please try again.');
+            setCookie("Email-Address", email , 30); // Set cookie for 30 days
+        
+            // Wait 100ms before redirecting
+            setTimeout(() => {
+                window.location.href = index_page;
+            }, 100);
         }
     })
     .catch(error => {

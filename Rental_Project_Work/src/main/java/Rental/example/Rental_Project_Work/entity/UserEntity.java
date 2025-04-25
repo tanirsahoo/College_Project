@@ -8,13 +8,13 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.validator.constraints.Length;
 import org.springframework.web.bind.annotation.RequestMapping;
-
 @Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
 public class UserEntity {
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int user_id ;
@@ -38,4 +38,9 @@ public class UserEntity {
     @Size(min = 11, max = 16)
     @Pattern(regexp = "^\\+?[0-9]{10,15}$", message = "Invalid contact number format")
     private String contact_number ;
+    @Column(name = "is_verified")
+    private boolean isVerified = false;
+
+    @Column(name = "verification_token")
+    private String verificationToken ;
 }

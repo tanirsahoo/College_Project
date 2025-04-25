@@ -13,28 +13,36 @@ import java.util.Optional;
 public class UserServiceImplementation implements UserService{
     @Autowired
     private UserRepository userRepositiory;
+    @Autowired
+    private EmailService emailService;
+
     @Override
     public UserEntity saveUser(UserEntity useren) {
-        // Check if referral_id matches any user_id
         if (useren.getReferral_id() != null && !useren.getReferral_id().isEmpty()) {
-            // Parse referral_id to integer if it's supposed to represent user_id
-            int referredUserId;
             try {
-                referredUserId = Integer.parseInt(useren.getReferral_id());
+                int referredUserId = Integer.parseInt(useren.getReferral_id());
+                if (userRepositiory.findById(referredUserId).isEmpty()) {
+                    throw new IllegalArgumentException("Invalid referral_id");
+                }
             } catch (NumberFormatException e) {
                 throw new IllegalArgumentException("Invalid referral_id format");
             }
-
-            // Verify if the referral_id exists as user_id in the database
-            Optional<UserEntity> referredUser = userRepositiory.findById(referredUserId);
-            if (!referredUser.isPresent()) {
-                throw new IllegalArgumentException("Invalid referral_id: No user found with user_id " + referredUserId);
-            }
         }
 
-        // Save the user if referral_id is valid or not provided
-        return userRepositiory.save(useren);
+        // Generate and set verification token
+        String token = java.util.UUID.randomUUID().toString();
+        useren.setVerificationToken(token);
+        useren.setVerified(false);
+
+        // Save to DB
+        UserEntity savedUser = userRepositiory.save(useren);
+
+        // Send Email
+        emailService.sendVerificationEmail(savedUser.getEmail(), token);
+
+        return savedUser;
     }
+
 
     @Override
     public List<UserEntity> fetchUserList() {

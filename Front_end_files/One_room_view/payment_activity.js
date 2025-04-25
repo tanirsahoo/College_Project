@@ -52,6 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 alert("❌ Payment failed: " + result.error.message);
             } else {
                 alert("✅ Payment successful!");
+                // todo: After Payment action:
                 window.location.href = index_page ;
             }
         });        

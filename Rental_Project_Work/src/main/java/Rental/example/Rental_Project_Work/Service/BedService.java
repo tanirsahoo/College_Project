@@ -1,6 +1,7 @@
 package Rental.example.Rental_Project_Work.Service;
 
 import Rental.example.Rental_Project_Work.Entity.Bed;
+import Rental.example.Rental_Project_Work.DTO.BedWithPGDTO;
 import Rental.example.Rental_Project_Work.Repository.BedRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -29,7 +30,7 @@ public class BedService {
     public Bed updateBed(int id, Bed updatedBed) {
         return bedRepository.findById(id)
                 .map(bed -> {
-                    bed.setPG_id(updatedBed.getPG_id());
+                    bed.setPg(updatedBed.getPg()); // Corrected this line
                     bed.setVideo(updatedBed.getVideo());
                     bed.setImage(updatedBed.getImage());
                     bed.setCost(updatedBed.getCost());
@@ -47,5 +48,9 @@ public class BedService {
 
     public List<Bed> getBedsByType(String type) {
         return bedRepository.findByType(type);
+    }
+
+    public List<BedWithPGDTO> fetchBedsWithPGDetails() {
+        return bedRepository.fetchAllBedsWithPG();
     }
 }

@@ -1,58 +1,145 @@
+// async function fetchBedMedia(bed_id) {
+//   try {
+//     const response = await fetch(PG_bed_details + `${bed_id}`);
+//     if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+
+//     const data = await response.json();
+
+//     const imageFiles = JSON.parse(data.image.replace(/'/g, '"'));
+//     const videoFiles = JSON.parse(data.video.replace(/'/g, '"'));
+
+//     const carouselTrack = document.getElementById("carouselTrack");
+//     carouselTrack.innerHTML = "";
+
+//     // Clone last image for infinite scroll effect
+//     const lastImage = imageFiles[imageFiles.length - 1];
+//     const cloneLast = document.createElement("div");
+//     cloneLast.className = "carousel-slide";
+//     cloneLast.innerHTML = `<img src="/Media_Files/PG${data.pg_id}/${lastImage}" alt="cloned-last" />`;
+//     carouselTrack.appendChild(cloneLast);
+
+//     // Append all images
+//     imageFiles.forEach((img, index) => {
+//       const slide = document.createElement("div");
+//       slide.className = "carousel-slide";
+//       slide.innerHTML = `<img src="/Media_Files/PG${data.pg_id}/${img}" alt="${index + 1}" />`;
+//       carouselTrack.appendChild(slide);
+//     });
+
+//     // Clone first image for infinite scroll
+//     const firstImage = imageFiles[0];
+//     const cloneFirst = document.createElement("div");
+//     cloneFirst.className = "carousel-slide";
+//     cloneFirst.innerHTML = `<img src="/Media_Files/PG${data.pg_id}/${firstImage}" alt="cloned-first" />`;
+//     carouselTrack.appendChild(cloneFirst);
+
+//     // Append videos
+//     videoFiles.forEach((vid) => {
+//       const slide = document.createElement("div");
+//       slide.className = "carousel-slide";
+//       slide.innerHTML = `
+//         <video controls>
+//           <source src="/Media_Files/PG${data.pg_id}/${vid}" type="video/mp4">
+//           Your browser does not support the video tag.
+//         </video>
+//       `;
+//       carouselTrack.appendChild(slide);
+//     });
+
+//     console.log("✅ Carousel built with images and video!");
+//     initCarousel();
+
+//   } catch (error) {
+//     console.error("❌ Failed to fetch bed media:", error);
+//   }
+// }
+
 async function fetchBedMedia(bed_id) {
   try {
     const response = await fetch(PG_bed_details + `${bed_id}`);
     if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-    
+
     const data = await response.json();
-
-    const imageFiles = JSON.parse(data.image.replace(/'/g, '"'));
-    const videoFiles = JSON.parse(data.video.replace(/'/g, '"'));
-
     const carouselTrack = document.getElementById("carouselTrack");
     carouselTrack.innerHTML = "";
 
-    // Clone last image for infinite scroll effect
-    const lastImage = imageFiles[imageFiles.length - 1];
-    const cloneLast = document.createElement("div");
-    cloneLast.className = "carousel-slide";
-    cloneLast.innerHTML = `<img src="/Media_Files/PG${data.pg_id}/${lastImage}" alt="cloned-last" />`;
-    carouselTrack.appendChild(cloneLast);
+    const pgFolder = `PG${data.pg.pg_id}`;
+    let hasMedia = false;
 
-    // Append all images
-    imageFiles.forEach((img, index) => {
-      const slide = document.createElement("div");
-      slide.className = "carousel-slide";
-      slide.innerHTML = `<img src="/Media_Files/PG${data.pg_id}/${img}" alt="${index + 1}" />`;
-      carouselTrack.appendChild(slide);
-    });
+    // Handle Images
+    let imageFiles = [];
+    if (data.image && data.image !== "[]" && data.image !== "null") {
+      try {
+        imageFiles = JSON.parse(data.image.replace(/'/g, '"'));
+        if (Array.isArray(imageFiles) && imageFiles.length > 0) {
+          hasMedia = true;
 
-    // Clone first image for infinite scroll
-    const firstImage = imageFiles[0];
-    const cloneFirst = document.createElement("div");
-    cloneFirst.className = "carousel-slide";
-    cloneFirst.innerHTML = `<img src="/Media_Files/PG${data.pg_id}/${firstImage}" alt="cloned-first" />`;
-    carouselTrack.appendChild(cloneFirst);
+          // Clone last image for infinite scroll
+          const lastImage = imageFiles[imageFiles.length - 1];
+          const cloneLast = document.createElement("div");
+          cloneLast.className = "carousel-slide";
+          cloneLast.innerHTML = `<img src="/Media_Files/${pgFolder}/${lastImage}" alt="cloned-last" />`;
+          carouselTrack.appendChild(cloneLast);
 
-    // Append videos
-    videoFiles.forEach((vid) => {
-      const slide = document.createElement("div");
-      slide.className = "carousel-slide";
-      slide.innerHTML = `
-        <video controls>
-          <source src="/Media_Files/PG${data.pg_id}/${vid}" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      `;
-      carouselTrack.appendChild(slide);
-    });
+          // Main images
+          imageFiles.forEach((img, index) => {
+            const slide = document.createElement("div");
+            slide.className = "carousel-slide";
+            slide.innerHTML = `<img src="/Media_Files/${pgFolder}/${img}" alt="${index + 1}" />`;
+            carouselTrack.appendChild(slide);
+          });
 
-    console.log("✅ Carousel built with images and video!");
-    initCarousel();
+          // Clone first image
+          const firstImage = imageFiles[0];
+          const cloneFirst = document.createElement("div");
+          cloneFirst.className = "carousel-slide";
+          cloneFirst.innerHTML = `<img src="/Media_Files/${pgFolder}/${firstImage}" alt="cloned-first" />`;
+          carouselTrack.appendChild(cloneFirst);
+        }
+      } catch (err) {
+        console.warn("Image parsing failed or no valid images:", err);
+      }
+    }
+
+    // Handle Videos
+    let videoFiles = [];
+    if (data.video && data.video !== "[]" && data.video !== "null") {
+      try {
+        videoFiles = JSON.parse(data.video.replace(/'/g, '"'));
+        if (Array.isArray(videoFiles) && videoFiles.length > 0) {
+          hasMedia = true;
+
+          videoFiles.forEach((vid) => {
+            const slide = document.createElement("div");
+            slide.className = "carousel-slide";
+            slide.innerHTML = `
+              <video controls muted autoplay loop playsinline>
+                <source src="/Media_Files/${pgFolder}/${vid}" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            `;
+            carouselTrack.appendChild(slide);
+          });
+        }
+      } catch (err) {
+        console.warn("Video parsing failed or no valid videos:", err);
+      }
+    }
+
+    if (hasMedia) {
+      // console.log("✅ Carousel built with media!");
+      initCarousel();
+    } else {
+      carouselTrack.innerHTML = `<div class="carousel-slide no-media"><p>No media available.</p></div>`;
+      console.log("ℹ️ No media found for this bed.");
+    }
 
   } catch (error) {
     console.error("❌ Failed to fetch bed media:", error);
   }
 }
+
+
 
 function initCarousel() {
   const track = document.getElementById("carouselTrack");
@@ -149,7 +236,7 @@ fetchBedMedia(bedId);
 fetch(`${PG_bed_details}${bedId}`)
   .then(res => res.json())
   .then(bedData => {
-    const pgId = bedData.pg_id;
+    const pgId = bedData.pg.pg_id;
     const cost = parseInt(bedData.cost);
 
     // Set cost and striked price
@@ -180,9 +267,9 @@ fetch(`${PG_bed_details}${bedId}`)
   })
   .then(res => res.json())
   .then(pgData => {
-    console.log(pgData) ;
+    // console.log(pgData);
     const rules = JSON.parse(pgData.pgrules.replace(/'/g, '"'));
-    console.log(rules) ;
+    // console.log(rules);
     const ul = document.getElementById("pgRules");
     ul.innerHTML = "";
     rules.forEach(rule => {

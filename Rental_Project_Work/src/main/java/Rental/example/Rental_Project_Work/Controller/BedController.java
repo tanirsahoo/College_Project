@@ -1,6 +1,7 @@
 package Rental.example.Rental_Project_Work.Controller;
 
 import Rental.example.Rental_Project_Work.Entity.Bed;
+import Rental.example.Rental_Project_Work.DTO.BedWithPGDTO;
 import Rental.example.Rental_Project_Work.Service.BedService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -32,21 +33,6 @@ public class BedController {
         return bedService.addBed(bed);
     }
 
-//    @PutMapping("/{id}")
-//    public ResponseEntity<Bed> updateBed(@PathVariable int id, @RequestBody Bed updatedBed) {
-//        try {
-//            return ResponseEntity.ok(bedService.updateBed(id, updatedBed));
-//        } catch (RuntimeException e) {
-//            return ResponseEntity.notFound().build();
-//        }
-//    }
-//
-//    @DeleteMapping("/{id}")
-//    public ResponseEntity<Void> deleteBed(@PathVariable int id) {
-//        bedService.deleteBed(id);
-//        return ResponseEntity.noContent().build();
-//    }
-
     @GetMapping("/single")
     public List<Bed> getSingleBeds() {
         return bedService.getBedsByType("Single Bed");
@@ -65,5 +51,10 @@ public class BedController {
     @GetMapping("/Dorm")
     public List<Bed> getDormitoryBeds() {
         return bedService.getBedsByType("Dormatory");
+    }
+
+    @GetMapping("/withpg")
+    public List<BedWithPGDTO> getBedsWithPGDetails() {
+        return bedService.fetchBedsWithPGDetails();
     }
 }
