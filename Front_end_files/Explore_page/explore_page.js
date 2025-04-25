@@ -46,6 +46,17 @@ submitButton.addEventListener('click', () => {
 
 
 
-function search_work(){
-  alert("Hello World");
-}
+document.getElementById('search_form').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent the form from submitting normally
+
+  // Extract the value from the search box
+  const searchQuery = document.getElementById('search_box').value;
+
+  // Store the value in a variable
+  console.log("Search Query: ", searchQuery);  // This will print the extracted value
+
+  // You can now use the `searchQuery` variable as needed
+});
+document.getElementById('search_box_submit_class').addEventListener('click', function() {
+  document.getElementById('search_form').submit();  // Trigger form submit event
+});

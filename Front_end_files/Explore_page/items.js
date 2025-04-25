@@ -148,6 +148,9 @@ async function filter_implementation() {
       }
   
       const data = await response.json();
+    //   console.log("======================================");
+    //   console.log(Object.entries(selectedValues)) ;
+    //   console.log("======================================");
   
       const scoredItems = data.map(item => {
               
@@ -157,18 +160,18 @@ async function filter_implementation() {
           if (!selectedValue) continue;
   
           if (
-            (key === 'dropdown_1' && item.gender === selectedValue) ||
-            (key === 'dropdown_2' && item.type === selectedValue) ||
-            (key === 'dropdown_3' && item.pg.state === selectedValue) ||
+            (key === 'dropdown_1' && item.type === selectedValue) ||
+            (key === 'dropdown_2' && item.gender === selectedValue) ||
+            (key === 'dropdown_3' && item.cost === selectedValue) ||
             (key === 'dropdown_4' && item.pg.pincode === selectedValue) ||
-            (key === 'dropdown_5' && item.cost === selectedValue)
+            (key === 'dropdown_5' && item.pg.state === selectedValue)
           ) {
-            wait(1000); // Simulate a delay for the match
+            // wait(1000); // Simulate a delay for the match
             matchCount++;
-            console.log(matchCount) ;
+            // console.log(matchCount) ;
           }
         }
-        console.log(matchCount);
+        // console.log(matchCount);
         return { item, matchCount };
       });
   
@@ -178,12 +181,89 @@ async function filter_implementation() {
       // Extract sorted items
       items = scoredItems.map(entry => entry.item);
   
-      console.log("Sorted & Filtered Items:", items);
+    //   console.log("Sorted & Filtered Items:", items);
       displayData(items);
   
     } catch (error) {
       console.error("Error fetching data:", error);
     }
-}    
+}  
+
+async function search_implementation(query) {
+    try {
+        // Create the request body with the query passed as an argument
+        const requestBody = {
+            query: query
+        };
+
+        // Send POST request to the API
+        const response = await fetch(keyword_extract, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(requestBody)
+        });
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+
+        // Parse the response data
+        const data = await response.json();
+
+        // Fetch bed data from another source
+        const bed_response = await fetch(bed_get_request);
+        if (!bed_response.ok) {
+            throw new Error(`HTTP error! Status: ${bed_response.status}`);
+        }
+
+        const bed_data = await bed_response.json();
+
+        const scoredItems = bed_data.map(bed => {
+            let matchCount = 0;
+
+            // Compare the fetched data with the bed data
+            for (const [key, selectedValue] of Object.entries(selectedValues)) {
+                if (!selectedValue) continue;
+
+                // Check for matches based on item properties
+                if (
+                    (key === 'city' && bed.pg.pincode === selectedValue) ||
+                    (key === 'cost' && bed.cost === selectedValue) ||
+                    (key === 'gender' && bed.gender === selectedValue) ||
+                    (key === 'pgname' && bed.pg.pgname === selectedValue) ||
+                    (key === 'pincode' && bed.pg.pincode === selectedValue) ||
+                    (key === 'similarity_score' && "0.0" === selectedValue) ||
+                    (key === 'state' && bed.pg.state === selectedValue) ||
+                    (key === 'type' && bed.type === selectedValue)
+                ) {
+                    matchCount++;
+                }
+            }
+
+            return { item: bed, matchCount };
+        });
+
+        // Sort items based on the number of matches (descending order)
+        scoredItems.sort((a, b) => b.matchCount - a.matchCount);
+
+        // Extract sorted items
+        const items = scoredItems.map(entry => entry.item);
+
+        // Display the updated items
+        displayData(items);
+
+    } catch (error) {
+        console.error("Error fetching data:", error);
+    }
+}
+
+function getSearchQueryFromURL() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const searchQuery = urlParams.get('search_box');
+    search_implementation(searchQuery) ;
+}
+
 
 document.addEventListener("DOMContentLoaded", fetchBedData);

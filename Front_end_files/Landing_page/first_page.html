@@ -47,18 +47,14 @@
                 <li class="dropdown">
                     <a href="#">Properties</a>
                     <ul class="dropdown-menu">
-                        <li class="login_signup_option_open"><a href="#">Explore</a></li>
+                        <li class="login_signup_option_open" id="login_signup_option_open"><a href="#">Explore</a></li>
                         <li id="login_signup_option_open" class="login_signup_option_open"><a href="#">Register</a></li>
                     </ul>
                 </li>
-                <li class="dropdown">
+                <li class="dropdown" id="login_signup_option_open">
                     <a href="#">About Us</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Our Team</a></li>
-                        <li><a href="#">Platform Guide</a></li>
-                    </ul>
                 </li>
-                <li><a href="/contact_us_page/contact_us_page.html">Contact</a></li>
+                <li id="login_signup_option_open"><a href="/contact_us_page/contact_us_page.html">Contact</a></li>
             </ul>
         </div>
         <div class="social-icons">
@@ -767,12 +763,12 @@
                             <li class="footer_quick_links" id="footer_quick_link_1"><a
                                     href="/Landing_page/first_page.html" class="footer_option_link">Home</a></li>
                             <li class="footer_quick_links" id="footer_quick_link_2"><a href="#"
-                                    class="footer_option_link">About Us</a></li>
+                                    class="footer_option_link" id="login_signup_option_open">About Us</a></li>
                             <li class="footer_quick_links" id="footer_quick_link_3"><a
-                                    href="/contact_us_page/contact_us_page.html" class="footer_option_link">Contact</a>
+                                    href="/contact_us_page/contact_us_page.html" class="footer_option_link" id="login_signup_option_open">Contact</a>
                             </li>
                             <li class="footer_quick_links" id="footer_quick_link_4"><a
-                                    href="/Explore_page/explore_page.html" class="footer_option_link">Explore</a></li>
+                                    href="#" class="footer_option_link" id="login_signup_option_open">Explore</a></li>
                         </ul>
                     </div>
                 </div>
@@ -836,6 +832,7 @@
     <script src="/Common_files/endpoint.js"></script>
     <script src="first_page_script.js"></script>
     <script src="/Landing_logout_page/cookie_and_logout_check.js"></script>
+    <script src="/Common_files/endpoint.js"></script>
     <!-- <script src="/testing/cookies_setter.js"></script> -->
 
 </body>

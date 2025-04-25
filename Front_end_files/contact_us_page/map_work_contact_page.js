@@ -14,3 +14,15 @@ const map = L.map("map").setView([22.539150198145375, 88.3287817452962], 15);
 
 
 // 22.539150198145375, 88.3287817452962
+
+let contact_us_page_home = document.getElementById('contact_us_page_home') ;
+contact_us_page_home.addEventListener('click', () =>{
+    if (!getCookie("Email-Address")) {
+        // If not found, redirect to first_page.html
+        window.location.href = first_page;
+        // console.log("Not found cookie") ;
+    }
+    else{
+        window.location.href = logged_in_page;
+    }
+}) ;
