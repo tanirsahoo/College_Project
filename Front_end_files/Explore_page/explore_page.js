@@ -40,8 +40,8 @@ document.addEventListener('click', () => {
 // Handle Submit Button Click
 submitButton.addEventListener('click', () => {
   console.log("Selected Values:", selectedValues);
-  // alert(`Selected Values:\n${JSON.stringify(selectedValues, null, 2)}`);
-  filter_implementation();
+  alert(`Selected Values:\n${JSON.stringify(selectedValues, null, 2)}`);
+  // filter_implementation();
 });
 
 
@@ -53,10 +53,13 @@ document.getElementById('search_form').addEventListener('submit', function(event
   const searchQuery = document.getElementById('search_box').value;
 
   // Store the value in a variable
-  console.log("Search Query: ", searchQuery);  // This will print the extracted value
 
   // You can now use the `searchQuery` variable as needed
 });
-document.getElementById('search_box_submit_class').addEventListener('click', function() {
-  document.getElementById('search_form').submit();  // Trigger form submit event
+document.getElementById('search_box_submit_class').addEventListener('click', function(event) {
+    event.preventDefault();  // Prevent form from submitting by default
+
+    // Get the value from the search box
+    const query = document.getElementById('search_box').value.trim();
+    search_implementation(query) ;
 });

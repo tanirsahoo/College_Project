@@ -7,5 +7,6 @@ const PG_bed_details = "http://127.0.0.1:9000/beds/" ;
 const payment_endpoint_post = "http://localhost:9000/api/payment/create-payment-intent/" ;
 const index_page = "http://127.0.0.1:5500" ;
 const first_page = "http://127.0.0.1:5500/Landing_page/first_page.html";
-const keyword_extract = "http://localhost:9500/recommend" ;
+const keyword_extract = "http://127.0.0.1:8000/search" ;
+// const keyword_extract = "http://localhost:9500/recommend" ;
 const logged_in_page = "http://127.0.0.1:5500/Landing_logout_page/Landing_page.html" ;

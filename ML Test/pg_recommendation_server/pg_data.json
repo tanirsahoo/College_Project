@@ -1,546 +1,354 @@
 [
     {
-        "bed": {
-            "pg": {
-                "address": "Koliving Ultra-Luxurious Bhawanipur PG, Bhowanipore, Kolkata",
-                "state": "West Bengal",
-                "map_location_lat": "22.532947973524912",
-                "map_location_lon": "88.34652926662847",
-                "pincode": "700025",
-                "pg_id": 1,
-                "pgname": "Sunshine Residency",
-                "pgrules": "['Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, aspernatur.' , 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci quod quis deserunt odio quam tempora.','Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto tempore totam deleniti.','Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque quia illo, amet architecto ea fugit vitae rem!','Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quas sunt nihil hic vitae incidunt numquam magni quisquam. Eos, temporibus!']"
-            },
-            "video": "['PG Video.mp4']",
-            "image": "['Triple-1.jpg','Triple-2.jpg','Triple-3.jpg','Triple-4.jpg','Triple-5.jpg']",
-            "cost": "5000",
-            "duration": null,
-            "user_id": null,
-            "gender": "co-living",
-            "type": "Triple",
-            "description": "Experience comfortable and affordable living in our spacious Triple Bedded PG Room, thoughtfully designed for students and working professionals seeking a vibrant community atmosphere. Each room is fully furnished and features three individual beds, personal storage space, study desks, and ample ventilation to ensure a pleasant stay.",
-            "facilities_for_bed": "['Large Bed','Dry Cleaning','Air Conditioning','Shared Kitchen','High Speed Wifi']",
-            "bed_id": 502
-        },
         "pg": {
             "address": "Koliving Ultra-Luxurious Bhawanipur PG, Bhowanipore, Kolkata",
             "state": "West Bengal",
             "map_location_lat": "22.532947973524912",
             "map_location_lon": "88.34652926662847",
             "pincode": "700025",
-            "pg_id": 1,
             "pgname": "Sunshine Residency",
+            "pg_id": 1,
             "pgrules": "['Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, aspernatur.' , 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci quod quis deserunt odio quam tempora.','Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto tempore totam deleniti.','Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque quia illo, amet architecto ea fugit vitae rem!','Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quas sunt nihil hic vitae incidunt numquam magni quisquam. Eos, temporibus!']"
-        }
+        },
+        "video": "['PG Video.mp4']",
+        "image": "['Triple-1.jpg','Triple-2.jpg','Triple-3.jpg','Triple-4.jpg','Triple-5.jpg']",
+        "cost": "5000",
+        "duration": null,
+        "user_id": null,
+        "gender": "co-living",
+        "type": "Triple",
+        "description": "Experience comfortable and affordable living in our spacious Triple Bedded PG Room, thoughtfully designed for students and working professionals seeking a vibrant community atmosphere. Each room is fully furnished and features three individual beds, personal storage space, study desks, and ample ventilation to ensure a pleasant stay.",
+        "facilities_for_bed": "['Large Bed','Dry Cleaning','Air Conditioning','Shared Kitchen','High Speed Wifi']",
+        "bed_id": 502
     },
     {
-        "bed": {
-            "pg": {
-                "address": "123 Main Street, Sector 5",
-                "state": "West Bengal",
-                "map_location_lat": "22.5726",
-                "map_location_lon": "88.3639",
-                "pincode": "700019",
-                "pg_id": 2,
-                "pgname": "GreenView Residency",
-                "pgrules": "['No Loud Music', 'Must Come back within 8:00 p.m', 'Visitors not allowed without prior approval', 'Rent to be paid by 5th of each month', 'Maintain cleanliness in shared spaces', 'Electric appliances not allowed without permission']"
-            },
-            "video": null,
-            "image": "['Single-1.jpg','Single-2.jpg','Single-3.jpg']",
-            "cost": "6500",
-            "duration": null,
-            "user_id": null,
-            "gender": "girls",
-            "type": "Single",
-            "description": "Spacious single bed with private wardrobe, great for working professionals.",
-            "facilities_for_bed": "['Large bed', 'WiFi', 'Study table', 'Power backup', 'Ceiling fan', 'Hot water supply']",
-            "bed_id": 504
-        },
         "pg": {
             "address": "123 Main Street, Sector 5",
             "state": "West Bengal",
             "map_location_lat": "22.5726",
             "map_location_lon": "88.3639",
             "pincode": "700019",
-            "pg_id": 2,
             "pgname": "GreenView Residency",
+            "pg_id": 2,
             "pgrules": "['No Loud Music', 'Must Come back within 8:00 p.m', 'Visitors not allowed without prior approval', 'Rent to be paid by 5th of each month', 'Maintain cleanliness in shared spaces', 'Electric appliances not allowed without permission']"
-        }
+        },
+        "video": null,
+        "image": "['Single-1.jpg','Single-2.jpg','Single-3.jpg']",
+        "cost": "6500",
+        "duration": null,
+        "user_id": null,
+        "gender": "girls",
+        "type": "Single",
+        "description": "Spacious single bed with private wardrobe, great for working professionals.",
+        "facilities_for_bed": "['Large bed', 'WiFi', 'Study table', 'Power backup', 'Ceiling fan', 'Hot water supply']",
+        "bed_id": 504
     },
     {
-        "bed": {
-            "pg": {
-                "address": "123 Main Street, Sector 5",
-                "state": "West Bengal",
-                "map_location_lat": "22.5726",
-                "map_location_lon": "88.3639",
-                "pincode": "700019",
-                "pg_id": 2,
-                "pgname": "GreenView Residency",
-                "pgrules": "['No Loud Music', 'Must Come back within 8:00 p.m', 'Visitors not allowed without prior approval', 'Rent to be paid by 5th of each month', 'Maintain cleanliness in shared spaces', 'Electric appliances not allowed without permission']"
-            },
-            "video": null,
-            "image": "['Triple-1.jpg','Triple-2.jpg','Triple-3.jpg']",
-            "cost": "3500",
-            "duration": null,
-            "user_id": null,
-            "gender": "girls",
-            "type": "Triple",
-            "description": "A spacious triple bed setup with separate charging points and a shared bathroom.",
-            "facilities_for_bed": "['Large bed', 'Study desk', 'Power backup', 'Ceiling fan', 'Wardrobe', 'Cable TV']",
-            "bed_id": 506
-        },
         "pg": {
             "address": "123 Main Street, Sector 5",
             "state": "West Bengal",
             "map_location_lat": "22.5726",
             "map_location_lon": "88.3639",
             "pincode": "700019",
-            "pg_id": 2,
             "pgname": "GreenView Residency",
+            "pg_id": 2,
             "pgrules": "['No Loud Music', 'Must Come back within 8:00 p.m', 'Visitors not allowed without prior approval', 'Rent to be paid by 5th of each month', 'Maintain cleanliness in shared spaces', 'Electric appliances not allowed without permission']"
-        }
+        },
+        "video": null,
+        "image": "['Triple-1.jpg','Triple-2.jpg','Triple-3.jpg']",
+        "cost": "3500",
+        "duration": null,
+        "user_id": null,
+        "gender": "girls",
+        "type": "Triple",
+        "description": "A spacious triple bed setup with separate charging points and a shared bathroom.",
+        "facilities_for_bed": "['Large bed', 'Study desk', 'Power backup', 'Ceiling fan', 'Wardrobe', 'Cable TV']",
+        "bed_id": 506
     },
     {
-        "bed": {
-            "pg": {
-                "address": "123 Main Street, Sector 5",
-                "state": "West Bengal",
-                "map_location_lat": "22.5726",
-                "map_location_lon": "88.3639",
-                "pincode": "700019",
-                "pg_id": 2,
-                "pgname": "GreenView Residency",
-                "pgrules": "['No Loud Music', 'Must Come back within 8:00 p.m', 'Visitors not allowed without prior approval', 'Rent to be paid by 5th of each month', 'Maintain cleanliness in shared spaces', 'Electric appliances not allowed without permission']"
-            },
-            "video": null,
-            "image": "['Twin-1.jpg','Twin-2.jpg','Twin-3.jpg','Twin-4.jpg','Twin-5.jpg']",
-            "cost": "5500",
-            "duration": null,
-            "user_id": null,
-            "gender": "girls",
-            "type": "Double",
-            "description": "A comfortable double bed suitable for two people, with shared amenities and ample space.",
-            "facilities_for_bed": "['Large bed', 'WiFi', 'Air conditioning', 'Laundry service', 'Personal wardrobe', 'Table fan']",
-            "bed_id": 508
-        },
         "pg": {
             "address": "123 Main Street, Sector 5",
             "state": "West Bengal",
             "map_location_lat": "22.5726",
             "map_location_lon": "88.3639",
             "pincode": "700019",
-            "pg_id": 2,
             "pgname": "GreenView Residency",
+            "pg_id": 2,
             "pgrules": "['No Loud Music', 'Must Come back within 8:00 p.m', 'Visitors not allowed without prior approval', 'Rent to be paid by 5th of each month', 'Maintain cleanliness in shared spaces', 'Electric appliances not allowed without permission']"
-        }
+        },
+        "video": null,
+        "image": "['Twin-1.jpg','Twin-2.jpg','Twin-3.jpg','Twin-4.jpg','Twin-5.jpg']",
+        "cost": "5500",
+        "duration": null,
+        "user_id": null,
+        "gender": "girls",
+        "type": "Double",
+        "description": "A comfortable double bed suitable for two people, with shared amenities and ample space.",
+        "facilities_for_bed": "['Large bed', 'WiFi', 'Air conditioning', 'Laundry service', 'Personal wardrobe', 'Table fan']",
+        "bed_id": 508
     },
     {
-        "bed": {
-            "pg": {
-                "address": "Plot 45, Gachibowli, Hyderabad",
-                "state": "Telangana",
-                "map_location_lat": "17.4440",
-                "map_location_lon": "78.3498",
-                "pincode": "500032",
-                "pg_id": 3,
-                "pgname": "Lakeview Stay",
-                "pgrules": "['No Loud Music', 'Visitors restricted after 9 PM', 'ID proof mandatory for check-in', 'Monthly rent to be cleared by 3rd', 'Common area cleaning thrice a week', 'Cooking not allowed in rooms']"
-            },
-            "video": null,
-            "image": "['Single-1.jpg','Single-2.jpg','Single-3.jpg','Single-4.jpg']",
-            "cost": "10000",
-            "duration": null,
-            "user_id": null,
-            "gender": "boys",
-            "type": "Single",
-            "description": "Private single bed with cozy furnishing, great for working individuals or students.",
-            "facilities_for_bed": "['WiFi', 'Reading lamp', 'Private wardrobe', 'Hot water supply', 'Ceiling fan', 'Filtered drinking water']",
-            "bed_id": 600
-        },
         "pg": {
             "address": "Plot 45, Gachibowli, Hyderabad",
             "state": "Telangana",
             "map_location_lat": "17.4440",
             "map_location_lon": "78.3498",
             "pincode": "500032",
-            "pg_id": 3,
             "pgname": "Lakeview Stay",
+            "pg_id": 3,
             "pgrules": "['No Loud Music', 'Visitors restricted after 9 PM', 'ID proof mandatory for check-in', 'Monthly rent to be cleared by 3rd', 'Common area cleaning thrice a week', 'Cooking not allowed in rooms']"
-        }
+        },
+        "video": null,
+        "image": "['Single-1.jpg','Single-2.jpg','Single-3.jpg','Single-4.jpg']",
+        "cost": "10000",
+        "duration": null,
+        "user_id": null,
+        "gender": "boys",
+        "type": "Single",
+        "description": "Private single bed with cozy furnishing, great for working individuals or students.",
+        "facilities_for_bed": "['WiFi', 'Reading lamp', 'Private wardrobe', 'Hot water supply', 'Ceiling fan', 'Filtered drinking water']",
+        "bed_id": 600
     },
     {
-        "bed": {
-            "pg": {
-                "address": "Plot 45, Gachibowli, Hyderabad",
-                "state": "Telangana",
-                "map_location_lat": "17.4440",
-                "map_location_lon": "78.3498",
-                "pincode": "500032",
-                "pg_id": 3,
-                "pgname": "Lakeview Stay",
-                "pgrules": "['No Loud Music', 'Visitors restricted after 9 PM', 'ID proof mandatory for check-in', 'Monthly rent to be cleared by 3rd', 'Common area cleaning thrice a week', 'Cooking not allowed in rooms']"
-            },
-            "video": null,
-            "image": "['Twin-1.jpg','Twin-2.jpg','Twin-3.jpg','Twin-4.jpg','Twin-5.jpg']",
-            "cost": "8500",
-            "duration": null,
-            "user_id": null,
-            "gender": "boys",
-            "type": "Double",
-            "description": "Well-lit and airy shared room with dual beds, ideal for roommates or siblings.",
-            "facilities_for_bed": "['Air conditioning', 'Shared wardrobe', 'Laundry service', 'High-speed WiFi', 'Attached washroom', '24/7 power backup']",
-            "bed_id": 601
-        },
         "pg": {
             "address": "Plot 45, Gachibowli, Hyderabad",
             "state": "Telangana",
             "map_location_lat": "17.4440",
             "map_location_lon": "78.3498",
             "pincode": "500032",
-            "pg_id": 3,
             "pgname": "Lakeview Stay",
+            "pg_id": 3,
             "pgrules": "['No Loud Music', 'Visitors restricted after 9 PM', 'ID proof mandatory for check-in', 'Monthly rent to be cleared by 3rd', 'Common area cleaning thrice a week', 'Cooking not allowed in rooms']"
-        }
+        },
+        "video": null,
+        "image": "['Twin-1.jpg','Twin-2.jpg','Twin-3.jpg','Twin-4.jpg','Twin-5.jpg']",
+        "cost": "8500",
+        "duration": null,
+        "user_id": null,
+        "gender": "boys",
+        "type": "Double",
+        "description": "Well-lit and airy shared room with dual beds, ideal for roommates or siblings.",
+        "facilities_for_bed": "['Air conditioning', 'Shared wardrobe', 'Laundry service', 'High-speed WiFi', 'Attached washroom', '24/7 power backup']",
+        "bed_id": 601
     },
     {
-        "bed": {
-            "pg": {
-                "address": "Plot 45, Gachibowli, Hyderabad",
-                "state": "Telangana",
-                "map_location_lat": "17.4440",
-                "map_location_lon": "78.3498",
-                "pincode": "500032",
-                "pg_id": 3,
-                "pgname": "Lakeview Stay",
-                "pgrules": "['No Loud Music', 'Visitors restricted after 9 PM', 'ID proof mandatory for check-in', 'Monthly rent to be cleared by 3rd', 'Common area cleaning thrice a week', 'Cooking not allowed in rooms']"
-            },
-            "video": null,
-            "image": "['Triple-1.jpg','Triple-2.jpg','Triple-3.jpg','Triple-4.jpg','Triple-5.jpg']",
-            "cost": "7500",
-            "duration": null,
-            "user_id": null,
-            "gender": "boys",
-            "type": "Triple",
-            "description": "Comfortable triple-sharing room with common study space and personal lockers.",
-            "facilities_for_bed": "['Three beds', 'Personal charging points', 'High-speed internet', 'Common study desk', 'Clean drinking water', 'Room cleaning service']",
-            "bed_id": 602
-        },
         "pg": {
             "address": "Plot 45, Gachibowli, Hyderabad",
             "state": "Telangana",
             "map_location_lat": "17.4440",
             "map_location_lon": "78.3498",
             "pincode": "500032",
-            "pg_id": 3,
             "pgname": "Lakeview Stay",
+            "pg_id": 3,
             "pgrules": "['No Loud Music', 'Visitors restricted after 9 PM', 'ID proof mandatory for check-in', 'Monthly rent to be cleared by 3rd', 'Common area cleaning thrice a week', 'Cooking not allowed in rooms']"
-        }
+        },
+        "video": null,
+        "image": "['Triple-1.jpg','Triple-2.jpg','Triple-3.jpg','Triple-4.jpg','Triple-5.jpg']",
+        "cost": "7500",
+        "duration": null,
+        "user_id": null,
+        "gender": "boys",
+        "type": "Triple",
+        "description": "Comfortable triple-sharing room with common study space and personal lockers.",
+        "facilities_for_bed": "['Three beds', 'Personal charging points', 'High-speed internet', 'Common study desk', 'Clean drinking water', 'Room cleaning service']",
+        "bed_id": 602
     },
     {
-        "bed": {
-            "pg": {
-                "address": "Road No. 12, Banjara Hills, Hyderabad",
-                "state": "Telangana",
-                "map_location_lat": "17.4120",
-                "map_location_lon": "78.4422",
-                "pincode": "500034",
-                "pg_id": 4,
-                "pgname": "CityNest PG",
-                "pgrules": "['Maintain silence post 10 PM', 'Only registered guests allowed', 'Rent includes WiFi and electricity', 'Shared kitchen available 7 AM to 9 PM', 'Waste segregation mandatory', 'Keep bathrooms clean after use']"
-            },
-            "video": null,
-            "image": "['Single-1.jpg','Single-2.jpg','Single-3.jpg','Single-4.jpg','Single-5.jpg']",
-            "cost": "11000",
-            "duration": null,
-            "user_id": null,
-            "gender": "girls",
-            "type": "Single",
-            "description": "Private single bed with calm environment, suitable for working individuals and students.",
-            "facilities_for_bed": "['WiFi', 'Study table', 'Curtains', 'Power backup', 'Ceiling fan', 'Filtered water']",
-            "bed_id": 650
-        },
         "pg": {
             "address": "Road No. 12, Banjara Hills, Hyderabad",
             "state": "Telangana",
             "map_location_lat": "17.4120",
             "map_location_lon": "78.4422",
             "pincode": "500034",
-            "pg_id": 4,
             "pgname": "CityNest PG",
+            "pg_id": 4,
             "pgrules": "['Maintain silence post 10 PM', 'Only registered guests allowed', 'Rent includes WiFi and electricity', 'Shared kitchen available 7 AM to 9 PM', 'Waste segregation mandatory', 'Keep bathrooms clean after use']"
-        }
+        },
+        "video": null,
+        "image": "['Single-1.jpg','Single-2.jpg','Single-3.jpg','Single-4.jpg','Single-5.jpg']",
+        "cost": "11000",
+        "duration": null,
+        "user_id": null,
+        "gender": "girls",
+        "type": "Single",
+        "description": "Private single bed with calm environment, suitable for working individuals and students.",
+        "facilities_for_bed": "['WiFi', 'Study table', 'Curtains', 'Power backup', 'Ceiling fan', 'Filtered water']",
+        "bed_id": 650
     },
     {
-        "bed": {
-            "pg": {
-                "address": "Road No. 12, Banjara Hills, Hyderabad",
-                "state": "Telangana",
-                "map_location_lat": "17.4120",
-                "map_location_lon": "78.4422",
-                "pincode": "500034",
-                "pg_id": 4,
-                "pgname": "CityNest PG",
-                "pgrules": "['Maintain silence post 10 PM', 'Only registered guests allowed', 'Rent includes WiFi and electricity', 'Shared kitchen available 7 AM to 9 PM', 'Waste segregation mandatory', 'Keep bathrooms clean after use']"
-            },
-            "video": null,
-            "image": "['Twin-1.jpg','Twin-2.jpg','Twin-3.jpg','Twin-4.jpg','Twin-5.jpg']",
-            "cost": "9000",
-            "duration": null,
-            "user_id": null,
-            "gender": "girls",
-            "type": "Double",
-            "description": "Spacious shared room with dual beds, ample light, and modern amenities.",
-            "facilities_for_bed": "['Air conditioning', 'Dual wardrobes', 'Laundry service', 'WiFi', 'Attached bathroom', '24/7 power']",
-            "bed_id": 651
-        },
         "pg": {
             "address": "Road No. 12, Banjara Hills, Hyderabad",
             "state": "Telangana",
             "map_location_lat": "17.4120",
             "map_location_lon": "78.4422",
             "pincode": "500034",
-            "pg_id": 4,
             "pgname": "CityNest PG",
+            "pg_id": 4,
             "pgrules": "['Maintain silence post 10 PM', 'Only registered guests allowed', 'Rent includes WiFi and electricity', 'Shared kitchen available 7 AM to 9 PM', 'Waste segregation mandatory', 'Keep bathrooms clean after use']"
-        }
+        },
+        "video": null,
+        "image": "['Twin-1.jpg','Twin-2.jpg','Twin-3.jpg','Twin-4.jpg','Twin-5.jpg']",
+        "cost": "9000",
+        "duration": null,
+        "user_id": null,
+        "gender": "girls",
+        "type": "Double",
+        "description": "Spacious shared room with dual beds, ample light, and modern amenities.",
+        "facilities_for_bed": "['Air conditioning', 'Dual wardrobes', 'Laundry service', 'WiFi', 'Attached bathroom', '24/7 power']",
+        "bed_id": 651
     },
     {
-        "bed": {
-            "pg": {
-                "address": "Road No. 12, Banjara Hills, Hyderabad",
-                "state": "Telangana",
-                "map_location_lat": "17.4120",
-                "map_location_lon": "78.4422",
-                "pincode": "500034",
-                "pg_id": 4,
-                "pgname": "CityNest PG",
-                "pgrules": "['Maintain silence post 10 PM', 'Only registered guests allowed', 'Rent includes WiFi and electricity', 'Shared kitchen available 7 AM to 9 PM', 'Waste segregation mandatory', 'Keep bathrooms clean after use']"
-            },
-            "video": null,
-            "image": "['Triple-1.jpg','Triple-2.jpg','Triple-3.jpg','Triple-4.jpg','Triple-5.jpg']",
-            "cost": "8500",
-            "duration": null,
-            "user_id": null,
-            "gender": "girls",
-            "type": "Triple",
-            "description": "Affordable triple sharing with all essential facilities and common study space.",
-            "facilities_for_bed": "['Triple beds', 'WiFi', 'Personal lockers', 'Study desk', 'Ceiling fan', 'Room service']",
-            "bed_id": 652
-        },
         "pg": {
             "address": "Road No. 12, Banjara Hills, Hyderabad",
             "state": "Telangana",
             "map_location_lat": "17.4120",
             "map_location_lon": "78.4422",
             "pincode": "500034",
-            "pg_id": 4,
             "pgname": "CityNest PG",
+            "pg_id": 4,
             "pgrules": "['Maintain silence post 10 PM', 'Only registered guests allowed', 'Rent includes WiFi and electricity', 'Shared kitchen available 7 AM to 9 PM', 'Waste segregation mandatory', 'Keep bathrooms clean after use']"
-        }
+        },
+        "video": null,
+        "image": "['Triple-1.jpg','Triple-2.jpg','Triple-3.jpg','Triple-4.jpg','Triple-5.jpg']",
+        "cost": "8500",
+        "duration": null,
+        "user_id": null,
+        "gender": "girls",
+        "type": "Triple",
+        "description": "Affordable triple sharing with all essential facilities and common study space.",
+        "facilities_for_bed": "['Triple beds', 'WiFi', 'Personal lockers', 'Study desk', 'Ceiling fan', 'Room service']",
+        "bed_id": 652
     },
     {
-        "bed": {
-            "pg": {
-                "address": "14th Cross Road, Indiranagar, Bangalore",
-                "state": "Karnataka",
-                "map_location_lat": "12.9716",
-                "map_location_lon": "77.6412",
-                "pincode": "560038",
-                "pg_id": 5,
-                "pgname": "UrbanHive PG",
-                "pgrules": "['No smoking inside the premises', 'Quiet hours from 10 PM to 7 AM', 'Pets not allowed', 'Housekeeping available on alternate days', 'Late entry after 10 PM requires prior notice', 'Bills for utilities are shared equally']"
-            },
-            "video": null,
-            "image": "['Single-1.jpg','Single-2.jpg','Single-3.jpg','Single-4.jpg','Single-5.jpg']",
-            "cost": "13000",
-            "duration": null,
-            "user_id": null,
-            "gender": "co-living",
-            "type": "Single",
-            "description": "Comfortable single bed room designed for privacy and productivity with cozy ambiance.",
-            "facilities_for_bed": "['WiFi', 'Wardrobe', 'Reading light', 'Hot water', 'Bedside shelf', 'Filtered water']",
-            "bed_id": 701
-        },
         "pg": {
             "address": "14th Cross Road, Indiranagar, Bangalore",
             "state": "Karnataka",
             "map_location_lat": "12.9716",
             "map_location_lon": "77.6412",
             "pincode": "560038",
-            "pg_id": 5,
             "pgname": "UrbanHive PG",
+            "pg_id": 5,
             "pgrules": "['No smoking inside the premises', 'Quiet hours from 10 PM to 7 AM', 'Pets not allowed', 'Housekeeping available on alternate days', 'Late entry after 10 PM requires prior notice', 'Bills for utilities are shared equally']"
-        }
+        },
+        "video": null,
+        "image": "['Single-1.jpg','Single-2.jpg','Single-3.jpg','Single-4.jpg','Single-5.jpg']",
+        "cost": "13000",
+        "duration": null,
+        "user_id": null,
+        "gender": "co-living",
+        "type": "Single",
+        "description": "Comfortable single bed room designed for privacy and productivity with cozy ambiance.",
+        "facilities_for_bed": "['WiFi', 'Wardrobe', 'Reading light', 'Hot water', 'Bedside shelf', 'Filtered water']",
+        "bed_id": 701
     },
     {
-        "bed": {
-            "pg": {
-                "address": "14th Cross Road, Indiranagar, Bangalore",
-                "state": "Karnataka",
-                "map_location_lat": "12.9716",
-                "map_location_lon": "77.6412",
-                "pincode": "560038",
-                "pg_id": 5,
-                "pgname": "UrbanHive PG",
-                "pgrules": "['No smoking inside the premises', 'Quiet hours from 10 PM to 7 AM', 'Pets not allowed', 'Housekeeping available on alternate days', 'Late entry after 10 PM requires prior notice', 'Bills for utilities are shared equally']"
-            },
-            "video": null,
-            "image": "['Twin-1.jpg','Twin-2.jpg','Twin-3.jpg','Twin-4.jpg','Twin-5.jpg']",
-            "cost": "11500",
-            "duration": null,
-            "user_id": null,
-            "gender": "co-living",
-            "type": "Double",
-            "description": "Well-ventilated dual-sharing room with all essential amenities and shared workspace.",
-            "facilities_for_bed": "['Shared wardrobe', 'Air conditioning', 'Power backup', 'WiFi', 'Attached washroom', 'Laundry']",
-            "bed_id": 702
-        },
         "pg": {
             "address": "14th Cross Road, Indiranagar, Bangalore",
             "state": "Karnataka",
             "map_location_lat": "12.9716",
             "map_location_lon": "77.6412",
             "pincode": "560038",
-            "pg_id": 5,
             "pgname": "UrbanHive PG",
+            "pg_id": 5,
             "pgrules": "['No smoking inside the premises', 'Quiet hours from 10 PM to 7 AM', 'Pets not allowed', 'Housekeeping available on alternate days', 'Late entry after 10 PM requires prior notice', 'Bills for utilities are shared equally']"
-        }
+        },
+        "video": null,
+        "image": "['Twin-1.jpg','Twin-2.jpg','Twin-3.jpg','Twin-4.jpg','Twin-5.jpg']",
+        "cost": "11500",
+        "duration": null,
+        "user_id": null,
+        "gender": "co-living",
+        "type": "Double",
+        "description": "Well-ventilated dual-sharing room with all essential amenities and shared workspace.",
+        "facilities_for_bed": "['Shared wardrobe', 'Air conditioning', 'Power backup', 'WiFi', 'Attached washroom', 'Laundry']",
+        "bed_id": 702
     },
     {
-        "bed": {
-            "pg": {
-                "address": "14th Cross Road, Indiranagar, Bangalore",
-                "state": "Karnataka",
-                "map_location_lat": "12.9716",
-                "map_location_lon": "77.6412",
-                "pincode": "560038",
-                "pg_id": 5,
-                "pgname": "UrbanHive PG",
-                "pgrules": "['No smoking inside the premises', 'Quiet hours from 10 PM to 7 AM', 'Pets not allowed', 'Housekeeping available on alternate days', 'Late entry after 10 PM requires prior notice', 'Bills for utilities are shared equally']"
-            },
-            "video": null,
-            "image": "['Triple-1.jpg','Triple-2.jpg','Triple-3.jpg','Triple-4.jpg','Triple-5.jpg']",
-            "cost": "10000",
-            "duration": null,
-            "user_id": null,
-            "gender": "co-living",
-            "type": "Triple",
-            "description": "Budget-friendly triple-sharing accommodation with a vibrant living atmosphere.",
-            "facilities_for_bed": "['Triple beds', 'Study table', 'WiFi', 'Room service', 'Ceiling fan', 'Purified water dispenser']",
-            "bed_id": 703
-        },
         "pg": {
             "address": "14th Cross Road, Indiranagar, Bangalore",
             "state": "Karnataka",
             "map_location_lat": "12.9716",
             "map_location_lon": "77.6412",
             "pincode": "560038",
-            "pg_id": 5,
             "pgname": "UrbanHive PG",
+            "pg_id": 5,
             "pgrules": "['No smoking inside the premises', 'Quiet hours from 10 PM to 7 AM', 'Pets not allowed', 'Housekeeping available on alternate days', 'Late entry after 10 PM requires prior notice', 'Bills for utilities are shared equally']"
-        }
+        },
+        "video": null,
+        "image": "['Triple-1.jpg','Triple-2.jpg','Triple-3.jpg','Triple-4.jpg','Triple-5.jpg']",
+        "cost": "10000",
+        "duration": null,
+        "user_id": null,
+        "gender": "co-living",
+        "type": "Triple",
+        "description": "Budget-friendly triple-sharing accommodation with a vibrant living atmosphere.",
+        "facilities_for_bed": "['Triple beds', 'Study table', 'WiFi', 'Room service', 'Ceiling fan', 'Purified water dispenser']",
+        "bed_id": 703
     },
     {
-        "bed": {
-            "pg": {
-                "address": "BTM Layout 2nd Stage, Bangalore",
-                "state": "Karnataka",
-                "map_location_lat": "12.9166",
-                "map_location_lon": "77.6101",
-                "pincode": "560076",
-                "pg_id": 6,
-                "pgname": "Maple Residency",
-                "pgrules": "['Gate closes at 10:30 PM sharp', 'Guest entry only on weekends', 'Monthly inspection of rooms', 'Use of personal heaters not allowed', 'Rent includes filtered drinking water', '24/7 security with biometric access']"
-            },
-            "video": null,
-            "image": "['Single-1.jpg','Single-2.jpg','Single-3.jpg','Single-4.jpg','Single-5.jpg','Single-6.jpg']",
-            "cost": "13500",
-            "duration": null,
-            "user_id": null,
-            "gender": "co-living",
-            "type": "Single",
-            "description": "Compact single room perfect for working professionals seeking privacy and comfort.",
-            "facilities_for_bed": "['WiFi', 'Single wardrobe', 'Reading light', 'Ceiling fan', 'Geyser', 'Personal desk']",
-            "bed_id": 749
-        },
         "pg": {
             "address": "BTM Layout 2nd Stage, Bangalore",
             "state": "Karnataka",
             "map_location_lat": "12.9166",
             "map_location_lon": "77.6101",
             "pincode": "560076",
-            "pg_id": 6,
             "pgname": "Maple Residency",
+            "pg_id": 6,
             "pgrules": "['Gate closes at 10:30 PM sharp', 'Guest entry only on weekends', 'Monthly inspection of rooms', 'Use of personal heaters not allowed', 'Rent includes filtered drinking water', '24/7 security with biometric access']"
-        }
+        },
+        "video": null,
+        "image": "['Single-1.jpg','Single-2.jpg','Single-3.jpg','Single-4.jpg','Single-5.jpg','Single-6.jpg']",
+        "cost": "13500",
+        "duration": null,
+        "user_id": null,
+        "gender": "co-living",
+        "type": "Single",
+        "description": "Compact single room perfect for working professionals seeking privacy and comfort.",
+        "facilities_for_bed": "['WiFi', 'Single wardrobe', 'Reading light', 'Ceiling fan', 'Geyser', 'Personal desk']",
+        "bed_id": 749
     },
     {
-        "bed": {
-            "pg": {
-                "address": "BTM Layout 2nd Stage, Bangalore",
-                "state": "Karnataka",
-                "map_location_lat": "12.9166",
-                "map_location_lon": "77.6101",
-                "pincode": "560076",
-                "pg_id": 6,
-                "pgname": "Maple Residency",
-                "pgrules": "['Gate closes at 10:30 PM sharp', 'Guest entry only on weekends', 'Monthly inspection of rooms', 'Use of personal heaters not allowed', 'Rent includes filtered drinking water', '24/7 security with biometric access']"
-            },
-            "video": null,
-            "image": "['Twin-1.jpg','Twin-2.jpg','Twin-3.jpg','Twin-4.jpg','Twin-5.jpg','Twin-6.jpg']",
-            "cost": "11500",
-            "duration": null,
-            "user_id": null,
-            "gender": "co-living",
-            "type": "Double",
-            "description": "Spacious dual-sharing room with good lighting, ventilation, and basic facilities.",
-            "facilities_for_bed": "['WiFi', 'Shared cupboard', 'Attached bathroom', 'Power backup', 'Filtered water', 'Laundry area']",
-            "bed_id": 750
-        },
         "pg": {
             "address": "BTM Layout 2nd Stage, Bangalore",
             "state": "Karnataka",
             "map_location_lat": "12.9166",
             "map_location_lon": "77.6101",
             "pincode": "560076",
-            "pg_id": 6,
             "pgname": "Maple Residency",
+            "pg_id": 6,
             "pgrules": "['Gate closes at 10:30 PM sharp', 'Guest entry only on weekends', 'Monthly inspection of rooms', 'Use of personal heaters not allowed', 'Rent includes filtered drinking water', '24/7 security with biometric access']"
-        }
+        },
+        "video": null,
+        "image": "['Twin-1.jpg','Twin-2.jpg','Twin-3.jpg','Twin-4.jpg','Twin-5.jpg','Twin-6.jpg']",
+        "cost": "11500",
+        "duration": null,
+        "user_id": null,
+        "gender": "co-living",
+        "type": "Double",
+        "description": "Spacious dual-sharing room with good lighting, ventilation, and basic facilities.",
+        "facilities_for_bed": "['WiFi', 'Shared cupboard', 'Attached bathroom', 'Power backup', 'Filtered water', 'Laundry area']",
+        "bed_id": 750
     },
     {
-        "bed": {
-            "pg": {
-                "address": "BTM Layout 2nd Stage, Bangalore",
-                "state": "Karnataka",
-                "map_location_lat": "12.9166",
-                "map_location_lon": "77.6101",
-                "pincode": "560076",
-                "pg_id": 6,
-                "pgname": "Maple Residency",
-                "pgrules": "['Gate closes at 10:30 PM sharp', 'Guest entry only on weekends', 'Monthly inspection of rooms', 'Use of personal heaters not allowed', 'Rent includes filtered drinking water', '24/7 security with biometric access']"
-            },
-            "video": null,
-            "image": "['Triple-1.jpg','Triple-2.jpg','Triple-3.jpg','Triple-4.jpg','Triple-5.jpg','Triple-6.jpg']",
-            "cost": "10000",
-            "duration": null,
-            "user_id": null,
-            "gender": "co-living",
-            "type": "Triple",
-            "description": "Triple-sharing room ideal for students or interns with ample common space and amenities.",
-            "facilities_for_bed": "['WiFi', 'Study desk', 'Triple wardrobe', 'Curtains', 'Room service', '24x7 security']",
-            "bed_id": 751
-        },
         "pg": {
             "address": "BTM Layout 2nd Stage, Bangalore",
             "state": "Karnataka",
             "map_location_lat": "12.9166",
             "map_location_lon": "77.6101",
             "pincode": "560076",
-            "pg_id": 6,
             "pgname": "Maple Residency",
+            "pg_id": 6,
             "pgrules": "['Gate closes at 10:30 PM sharp', 'Guest entry only on weekends', 'Monthly inspection of rooms', 'Use of personal heaters not allowed', 'Rent includes filtered drinking water', '24/7 security with biometric access']"
-        }
+        },
+        "video": null,
+        "image": "['Triple-1.jpg','Triple-2.jpg','Triple-3.jpg','Triple-4.jpg','Triple-5.jpg','Triple-6.jpg']",
+        "cost": "10000",
+        "duration": null,
+        "user_id": null,
+        "gender": "co-living",
+        "type": "Triple",
+        "description": "Triple-sharing room ideal for students or interns with ample common space and amenities.",
+        "facilities_for_bed": "['WiFi', 'Study desk', 'Triple wardrobe', 'Curtains', 'Room service', '24x7 security']",
+        "bed_id": 751
     }
 ]
